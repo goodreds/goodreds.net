@@ -1,9 +1,9 @@
 ---
 layout: single.njk
-metaTitle: About kailoon
-metaDescription: Know more about me.
-title: Hi, I'm kailoon.
-description: I am a freelance front-end designer & developer based in Malaysia.
+metaTitle: About
+metaDescription: Know more.
+title: Hi.
+description: Helping you to understand the why and the how of web design.
 featuredImg:
 templateEngineOverride: njk,md
 eleventyNavigation:
@@ -35,9 +35,9 @@ I work remotely from my home office in Malaysia.
 
 ### Now
 
-Right now, I contracted to Envato as a senior reviewer for one of the largest digital marketplaces in the world — [ThemeForest](https://themeforest.net 'goto themeforest'). I have been doing contract works with Envato since 2008, shaping the content library for **ThemeForest** & **Envato Elements**. You might remember me as kailoon the reviewer from ThemeForest.
+Right now, I contracted to Envato as a senior reviewer for one of the largest digital marketplaces in the world — [ThemeForest](https://themeforest.net 'goto themeforest'). I have been doing contract work with Envato since 2008, shaping the content library for **ThemeForest** & **Envato Elements**. You might remember me as kailoon the reviewer from ThemeForest.
 
-I also work with companies and clients personally, building web sites and application UIs with a strong focus on **responsive design, accessibility, performance**. Over the years, I have the honour to collaborate with clients ranging from startups to SME. A few of them has grown successfully or getting acquired. Some of my featured clients are **Envato**, **99.co**, **Evercondo**, **MeetPoppy** & **Qbasis**. [Check out my portfolio](https://kailoon.com/works/).
+I also work with companies and clients personally, building web sites and application UIs with a strong focus on **responsive design, accessibility, performance**. Over the years, I have the honour to collaborate with clients ranging from startups to SME. A few of them has grown successfully or getting acquired. Some of my featured clients are **Envato**, **99.co**, **Evercondo**, **MeetPoppy** & **Qbasis**. [Check out my portfolio](https://kailoon.com/examples/).
 
 Drop me a line at **chankailoon@gmail.com** if you have an idea in mind that we can work together. The more details about your project you include in your message, the faster I will get back to you. You’ll hear back from me within 1 - 3 business days. I look forward to hearing from you. 🙂
 

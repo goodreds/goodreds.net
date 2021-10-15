@@ -16,7 +16,7 @@ published: true
 
 ### What Changed?
 
-The web development landscape changed a lot in recent years. Developers moved to modern web development ([JAMstack](https://jamstack.org/)) and become more specialised. There are now front-end, backend and full-stack web development stacks. I believe, front-end web development became the automatic choice for most developers with designer background.
+The web development landscape changed a lot in recent years. Developers moved to modern web development ([JAMstack](https://jamstack.org/)) and become more specialised. There are now front-end, backend and full-stack web development stacks. I believe, front-end web development became the automatic choice for most developers with a designer background.
 
 Other than that, WordPress evolved from a simple blogging platform to a [full-site-editing CMS](https://fullsiteediting.com/) (soon). We kinda see that coming. After years of reviewing on ThemeForest, the demands for a full fledge CMS from WordPress are increasing and page builder is gaining popularity since the introduction of [WPBakery](https://codecanyon.net/item/visual-composer-page-builder-for-wordpress/242431).
 

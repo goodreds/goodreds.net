@@ -1,0 +1,20 @@
+---
+layout: base.njk
+pagination:
+  data: collections.examples
+  size: 10
+  reverse: true
+  filter:
+    - examples
+    - posts
+
+---
+{%- block singleTop-%}
+  {%- include '../_components/_singletop.njk' -%}
+{%- endblock singleTop-%}
+
+<section id="examples" class="mb-20">
+  {% block exampleslist %}
+    {% include '../_components/_exampleslist.njk' %}
+  {% endblock exampleslist %}
+</section>

@@ -1,5 +1,5 @@
 {
 	"layout": "single",
 	"templateEngineOverride": "njk,md",
-	"tags": ["works"]
+	"tags": ["examples"]
 }

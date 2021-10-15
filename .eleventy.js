@@ -1,4 +1,5 @@
 const { DateTime } = require('luxon')
+const htmlmin = require('html-minifier')
 const fs = require('fs')
 const pluginNavigation = require('@11ty/eleventy-navigation')
 const markdownIt = require('markdown-it')
@@ -8,11 +9,19 @@ const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const markdownItAnchor = require('markdown-it-anchor')
 
 module.exports = function (eleventyConfig) {
-	eleventyConfig.addPassthroughCopy('./src/css/styles.css')
+	eleventyConfig.addWatchTarget('./tailwind.config.js')
+	eleventyConfig.addWatchTarget('./src/css/tailwind.css')
+
+	eleventyConfig.addShortcode('version', function () {
+		return now
+	})
+
+	// eleventyConfig.addPassthroughCopy('./src/css/styles.css')
 	eleventyConfig.addPassthroughCopy('./src/browserconfig.xml')
 	eleventyConfig.addPassthroughCopy('./src/site.webmanifest')
 	eleventyConfig.addPassthroughCopy('./src/admin/config.yml')
 	eleventyConfig.addPassthroughCopy('./src/img')
+	eleventyConfig.addPassthroughCopy('./src/typography')
 
 	eleventyConfig.addPlugin(pluginNavigation)
 	eleventyConfig.addPlugin(pluginRss)
@@ -20,6 +29,24 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.setDataDeepMerge(true)
 
+	// Configure htmlmin
+	eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
+		if (
+			process.env.ELEVENTY_PRODUCTION &&
+			outputPath &&
+			outputPath.endsWith('.html')
+		) {
+			let minified = htmlmin.minify(content, {
+				useShortDoctype: true,
+				removeComments: true,
+				collapseWhitespace: true,
+			});
+			return minified
+		}
+		return content
+	})
+
+	// Responsive images using srcset
 	eleventyConfig.addShortcode('respimg', (path, alt, style) => {
 		const fetchBase = `https://res.cloudinary.com/${eleventyConfig.cloudinaryCloudName}/image/upload/`
 		const src = `${fetchBase}q_auto,f_auto,w_400/${path}.${eleventyConfig.format}`
@@ -53,7 +80,7 @@ module.exports = function (eleventyConfig) {
 	})
 
 	// https://github.com/eeeps/eleventy-respimg
-	eleventyConfig.cloudinaryCloudName = 'kailoon'
+	eleventyConfig.cloudinaryCloudName = 'goodreds'
 	eleventyConfig.srcsetWidths = [
 		{ w: 400, v: 400 },
 		{ w: 600, v: 600 },
@@ -64,13 +91,15 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.format = 'webp'
 	eleventyConfig.fallbackWidth = 800
 
-	/* Markdown Overrides */
+	/* Markdown Overrides
+    	Convert external links to target _blank and noreferrer for better SEO optimisation, using markdown-it & markdown-it-link-attributes plugins.
+	*/
 	let markdownLibrary = markdownIt({
 		html: true,
 		breaks: true
 	})
 		.use(markdownitlinkatt, {
-			pattern: /^(?!(https:\/\/kailoon\.com|#)).*$/gm,
+			pattern: /^(?!(https:\/\/goodreds\.net|#)).*$/gm,
 			attrs: {
 				target: '_blank',
 				rel: 'noreferrer'
@@ -118,7 +147,7 @@ module.exports = function (eleventyConfig) {
 				tags = tags.filter(function (item) {
 					switch (item) {
 						// this list should match the `filter` list in tags.njk
-						case 'works':
+						case 'examples':
 						case 'posts':
 							return false
 					}

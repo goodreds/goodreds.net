@@ -1,49 +1,131 @@
 {
-	"services": [
+	"pricing": [
 		{
-			"name": "Services",
-			"description": "I focus on human-centric design (HCD) and practical design practice to achieve lasting solutions. It can be a digital products from scratch or upgrade existing one to cope with new demands / market."
+			"name": "Pricing",
+			"tagline": "Choose which option is right for you"
 		},
 		{
-			"name": "01. Branding & Identity",
-			"description": "A strong brand is important for your business especially startup or SME, to expand your digital reach and communicate with your customers.",
-			"tags": ["Style Exploration", "Visual Language", "Brand Guides"]
+			"name": "Basic review",
+			"description": "A basic audit to help you identify the most common problem areas in both UI and UX. Perfect for a small, personal website.",
+			"price": "199",
+      "sellingPoints": ["one", "two", "three", "four"],
+      "sellingPointObj": {
+        "one": {
+          "desc": "5-10 pages audited"
+        },
+        "two": {
+          "desc": "Common mistakes identified"
+        },
+        "three": {
+          "desc": "Easy improvements suggested"
+        },
+        "four": {
+          "desc": "2-day turnaround"
+        }
+      }
 		},
 		{
-			"name": "02. Web / App Design",
-			"description": "I use a structured design process for medium to large scaled projects. The process allow me to prototype complex ideas that can be easily transformed into fully functional solutions.",
-			"tags": [
-				"User Interfaces",
-				"Design Systems",
-				"Illustrations",
-				"Mobile Apps",
-				"Web Design",
-				"Digital Products"
-			]
+			"name": "Detailed review",
+			"description": "A more detailed and thorough design audit with more suggestions for code structure and some styling of your specific website components for you to deploy. Perfect for smaller businesses.",
+			"price": "499",
+      "sellingPoints": ["one", "two", "three", "four", "five"],
+      "sellingPointObj": {
+        "one": {
+          "desc": "10-20 pages audited"
+        },
+        "two": {
+          "desc": "Common mistakes identified"
+        },
+        "three": {
+          "desc": "Easy improvements suggested"
+        },
+        "four": {
+          "desc": "4-day turnaround"
+        },
+        "five": {
+          "desc": "Design patterns to deploy"
+        },
+        "six": {
+          "desc": "Code structures to deploy"
+        }
+      }
 		},
 		{
-			"name": "03. Web Development",
-			"description": "I always make sure the projects is developed with the latest technology and it is easy to use or maintained by the clients. Check out my <a href='https://github.com/kailoon/resume' target='_blank' rel='noreferrer'>skillset</a> & <a href='https://github.com/kailoon/certificates' target='_blank' rel='noreferrer'>certificates</a>.",
-			"tags": [
-				"Front-end Development",
-				"Responsive Website Development",
-				"WordPress",
-				"Grav",
-				"Hugo",
-				"React",
-				"Eleventy"
-			]
+			"name": "Comprehensive review",
+			"description": "A comprehensive assessment of your full website. Includes a starter design system tailored to your business",
+			"price": "799",
+      "sellingPoints": ["one", "two", "three", "four", "five", "six", "seven"],
+      "sellingPointObj": {
+        "one": {
+          "desc": "Large website assessed"
+        },
+        "two": {
+          "desc": "Common mistakes identified"
+        },
+        "three": {
+          "desc": "Detailed improvement suggestions"
+        },
+        "four": {
+          "desc": "7-day turnaround"
+        },
+        "five": {
+          "desc": "Design patterns to deploy"
+        },
+        "six": {
+          "desc": "Code structures to deploy"
+        },
+        "seven": {
+          "desc": "Some custom code snippets"
+        }
+      }
 		}
-	],
-	"featuredWorkTitle": "Featured Works",
-	"featuredWorkDescription": "Over the years, I have the honour to collaborate with clients range from startups to SME, some of them has grown successfully or being acquired. Below are some of the works I've involved with.",
-	"browseFullPortfolio": "Browse full portfolio",
-	"footerCreditLine1": "2021 © kailoon.",
-	"footerCreditLine2": "This site was designed in ",
-	"builtTools": {
-		"figma": "https://www.figma.com/",
-		"11ty": "https://www.11ty.dev/",
-		"tailwindcss": "https://tailwindcss.com/",
-		"deployed via Netlify": "https://www.netlify.com/"
-	}
+	]
+	,
+  "services": [
+    {
+      "name": "Services",
+      "description": "I focus on human-centric design (HCD) and practical design practice to achieve lasting solutions. It can be a digital products from scratch or upgrade existing one to cope with new demands / market."
+    },
+    {
+      "name": "01. Branding & Identity",
+      "description": "A strong brand is important for your business especially startup or SME, to expand your digital reach and communicate with your customers.",
+      "tags": ["Style Exploration", "Visual Language", "Brand Guides"]
+    },
+    {
+      "name": "02. Web / App Design",
+      "description": "I use a structured design process for medium to large scaled projects. The process allow me to prototype complex ideas that can be easily transformed into fully functional solutions.",
+      "tags": [
+        "User Interfaces",
+        "Design Systems",
+        "Illustrations",
+        "Mobile Apps",
+        "Web Design",
+        "Digital Products"
+      ]
+    },
+    {
+      "name": "03. Web Development",
+      "description": "I always make sure the projects is developed with the latest technology and it is easy to use or maintained by the clients. Check out my <a href='https://github.com/goodreds/resume' target='_blank' rel='noreferrer'>skillset</a> & <a href='https://github.com/goodreds/certificates' target='_blank' rel='noreferrer'>certificates</a>.",
+      "tags": [
+        "Front-end Development",
+        "Responsive Website Development",
+        "WordPress",
+        "Grav",
+        "Hugo",
+        "React",
+        "Eleventy"
+      ]
+    }
+  ],
+  "featuredWorkTitle": "Featured",
+  "featuredWorkDescription": "Which parts of the design of a good UI are the most impactful? And in addition, which ones are easiest to get wrong? This section gives you the lowdown on how to begin to address some of the more common problems discovered during audits. These can form the steps to help you begin to utilise the full power of your product, without throwing away good work that you've already invested in. This is a way to polish what you already have. Find out more.",
+  "browseFullPortfolio": "Browse full portfolio",
+  "footerCreditLine1": "2021 © goodreds.",
+  "footerCreditLine2": "This site was designed in ",
+  "builtTools": {
+    "figma": "https://www.figma.com/",
+    "11ty": "https://www.11ty.dev/",
+    "tailwindcss": "https://tailwindcss.com/",
+    "deployed via Netlify": "https://www.netlify.com/"
+  }
 }

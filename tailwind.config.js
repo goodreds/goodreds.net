@@ -1,17 +1,23 @@
+// Import Tailwind default palette colors
 const colors = require('tailwindcss/colors')
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
 	mode: 'jit',
-	purge: [
-		'./src/**/*.njk',
-		'./src/**/*.md',
-		'./src/**/*.js',
+	purge: {
+		content: [
+		'./src/**/*.{njk,md,js}',
+		'./src/*.{njk,md,js}',
 		'./.*.js',
-		'./_site/**/*.html'
+		'./_site/**/*.html',
 	],
+		options: {
+			safelist: [],
+		},
+	},
 	darkMode: 'media', // or 'media' or 'class'
 	theme: {
+		// Specify which of the Tailwind default palette colors to import for use
 		colors: {
 			gray: colors.blueGray,
 			purple: colors.purple,
@@ -27,7 +33,7 @@ module.exports = {
 		},
 		fontFamily: {
 			sans: [
-				'Inter',
+				'ProximaNova',
 				'ui-sans-serif',
 				'system-ui',
 				'-apple-system',

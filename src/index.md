@@ -1,8 +1,8 @@
 ---
 layout: index.njk
-metaTitle: kailoon - Freelance Front-End Web UI/UX Developer from Malaysia
-metaDescription: Design that code.
-title: 'Design for successful digital products and websites.'
-description: With a strong focus on responsive design, performance & accessibility.
+metaTitle: goodreds - Front-End Web UI/UX Development from Australia
+metaDescription: The how and the why.
+title: 'How to successfully design for great digital products and websites.'
+description: Responsive design, performance & accessibility.
 templateEngineOverride: njk,md
 ---

@@ -3,9 +3,10 @@
 	"version": "1.0.0",
 	"description": "Minimal Poftfolio / blog template built with eleventy & tailwindcss.",
 	"scripts": {
-		"serve": "ELEVENTY_ENV=dev npx eleventy --serve",
+		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "npm run serve",
-		"build": "ELEVENTY_ENV=dev npx eleventy",
+		"serve": "eleventy --serve & npx tailwindcss -i ./src/css/tailwind.css -c ./tailwind.config.js -o ./_site/css/style.css --watch",
+		"build": "ELEVENTY_PRODUCTION=true eleventy & NODE_ENV=production npx tailwindcss -i ./src/css/tailwind.css -c ./tailwind.config.js -o ./_site/css/style.css --minify",
 		"build:prod": "ELEVENTY_ENV=prod npx eleventy"
 	},
 	"keywords": [
@@ -14,20 +15,22 @@
 		"eleventy",
 		"purgecss"
 	],
-	"author": "kailoon",
+	"author": "A Goodreds",
 	"license": "ISC",
 	"devDependencies": {
 		"@11ty/eleventy": "^0.12.1",
 		"@11ty/eleventy-navigation": "^0.1.6",
 		"@11ty/eleventy-plugin-rss": "^1.1.1",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^3.1.2",
-		"autoprefixer": "^10.2.5",
+		"autoprefixer": "^10.3.7",
+		"html-minifier": "^4.0.0",
 		"luxon": "^1.28.0",
 		"markdown-it": "^10.0.0",
 		"markdown-it-anchor": "^7.0.2",
 		"markdown-it-link-attributes": "^3.0.0",
 		"nunjucks": "^3.2.3",
-		"postcss-cli": "^8.3.1",
-		"tailwindcss": "^2.2.4"
+		"postcss": "^8.3.9",
+		"postcss-cli": "^9.0.1",
+		"tailwindcss": "^2.2.17"
 	}
 }

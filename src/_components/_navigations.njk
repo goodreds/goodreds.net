@@ -1,7 +1,7 @@
   {% if tags %}
-    {% if 'works' in tags %}
-      {% set previousPost = collections.works | getPreviousCollectionItem(page) %}
-      {% set nextPost = collections.works | getNextCollectionItem(page) %}
+    {% if 'examples' in tags %}
+      {% set previousPost = collections.examples | getPreviousCollectionItem(page) %}
+      {% set nextPost = collections.examples | getNextCollectionItem(page) %}
       {% set middleText = 'browse' %}
       {% endif %}
 

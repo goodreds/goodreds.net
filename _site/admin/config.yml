@@ -4,17 +4,17 @@ backend:
 
 # This line should *not* be indented
 publish_mode: editorial_workflow
-site_url: https://kailoon.com
-display_url: https://kailoon.com
-logo_url: https://res.cloudinary.com/kailoon/image/upload/v1610896578/kailoon.com/logo_stqiiw.svg
+site_url: https://goodreds.net
+display_url: https://goodreds.net
+logo_url: https://res.cloudinary.com/goodreds/image/upload/v1634194628/goodreds_logo_color.svg
 show_preview_links: true
 
 # media
 media_library:
   name: cloudinary
   config:
-    cloud_name: kailoon
-    api_key: 373569654927936
+    cloud_name: goodreds
+    api_key: 147369189198654
 
 #collections
 collections:

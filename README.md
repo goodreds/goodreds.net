@@ -53,7 +53,7 @@ eleventyConfig.setLibrary('md', markdownLibrary)
 ### Installation
 
 1. Clone or download this repo and run `npm install`.
-2. Remove unwated posts / works.
+2. Remove unwated posts / examples.
 3. Update the site info in `metadata.json`.
 4. Update the homepage info `in data.json`.
 5. Update `about.md`.
