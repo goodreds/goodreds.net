@@ -1,7 +1,7 @@
 ---
-metaTitle: Envato Marketplaces
+metaTitle: Cards
 metaDescription: Design the logo for all the marketplaces of Envato.
-title: Envato Marketplaces
+title: Cards
 description: One of the largest digital marketplaces in the world from Envato.
 testimonial: I’ve been working with kailoon for over a decade. He has a great combination of creativity, reliability and industry knowledge. He’s also a good human being and I would happily recommend him to anyone who needs someone with a lot of industry expertise.
 clientName: Collis

@@ -1,7 +1,7 @@
 ---
-metaTitle: EverCondo App Design
+metaTitle: Fit & finish and the little professional touches
 metaDescription: Evercondo is a platform that allows condominium and high-rise based property managers and owners to access management tasks.
-title: EverCondo App Design
+title: Fit & finish and the little professional touches
 description: Evercondo is a platform that allows condominium and high-rise based property managers and owners to access management tasks.
 testimonial:
 clientName:

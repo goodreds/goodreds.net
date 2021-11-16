@@ -1,86 +1,76 @@
 {
-	"pricing": [
-		{
-			"name": "Pricing",
-			"tagline": "Choose which option is right for you"
-		},
-		{
-			"name": "Basic review",
-			"description": "A basic audit to help you identify the most common problem areas in both UI and UX. Perfect for a small, personal website.",
-			"price": "199",
+  "pricing": [
+    {
+      "name": "Pricing",
+      "tagline": "Choose which package is the right fit for your needs."
+    },
+    {
+      "name": "Essentials",
+      "description": "A basic audit to help you identify the most common problem areas in both UI and UX. Perfect for a small, personal website.",
+      "highprice": "349",
+      "price": "199",
+      "svg": "./img/essentials.svg",
       "sellingPoints": ["one", "two", "three", "four"],
       "sellingPointObj": {
         "one": {
-          "desc": "5-10 pages audited"
+          "desc": "<strong>5-10 pages</strong> audited"
         },
         "two": {
-          "desc": "Common mistakes identified"
+          "desc": "Common mistakes <strong>identified</strong>"
         },
         "three": {
-          "desc": "Easy improvements suggested"
+          "desc": "<strong>Easy improvements</strong> suggested"
         },
         "four": {
-          "desc": "2-day turnaround"
+          "desc": "<strong>2-day</strong> turnaround"
         }
       }
-		},
-		{
-			"name": "Detailed review",
-			"description": "A more detailed and thorough design audit with more suggestions for code structure and some styling of your specific website components for you to deploy. Perfect for smaller businesses.",
-			"price": "499",
-      "sellingPoints": ["one", "two", "three", "four", "five"],
+    },
+    {
+      "name": "Deluxe",
+      "description": "A detailed design audit with suggestions for structuring code & some styling of website components. Perfect for smaller businesses.",
+      "highprice": "599",
+      "price": "499",
+      "svg": "./img/deluxe.svg",
+      "sellingPoints": ["one", "two", "three", "four"],
       "sellingPointObj": {
         "one": {
-          "desc": "10-20 pages audited"
+          "desc": "All of the <strong>Essentials</strong> package +"
         },
         "two": {
-          "desc": "Common mistakes identified"
+          "desc": "<strong>10-20 pages</strong> audited"
         },
         "three": {
-          "desc": "Easy improvements suggested"
+          "desc": "<strong>Design patterns</strong> to deploy"
         },
         "four": {
-          "desc": "4-day turnaround"
-        },
-        "five": {
-          "desc": "Design patterns to deploy"
-        },
-        "six": {
-          "desc": "Code structures to deploy"
+          "desc": "<strong>4-day</strong> turnaround"
         }
       }
-		},
-		{
-			"name": "Comprehensive review",
-			"description": "A comprehensive assessment of your full website. Includes a starter design system tailored to your business",
-			"price": "799",
-      "sellingPoints": ["one", "two", "three", "four", "five", "six", "seven"],
+    },
+    {
+      "name": "Complete",
+      "description": "A comprehensive audit of your full website. Includes a starter design system tailored to your business. Best for larger businesses.",
+      "highprice": "999",
+      "price": "799",
+      "svg": "./img/complete.svg",
+      "sellingPoints": ["one", "two", "three", "four"],
       "sellingPointObj": {
         "one": {
-          "desc": "Large website assessed"
+          "desc": "All of the <strong>Deluxe</strong> package +"
         },
         "two": {
-          "desc": "Common mistakes identified"
+          "desc": "<strong>Larger website</strong10-20> audit"
         },
         "three": {
-          "desc": "Detailed improvement suggestions"
+          "desc": "Detailed <strong>improvement</strong> suggestions"
         },
         "four": {
-          "desc": "7-day turnaround"
-        },
-        "five": {
-          "desc": "Design patterns to deploy"
-        },
-        "six": {
-          "desc": "Code structures to deploy"
-        },
-        "seven": {
-          "desc": "Some custom code snippets"
+          "desc": "<strong>7-day</strong> turnaround"
         }
       }
-		}
-	]
-	,
+    }
+  ],
   "services": [
     {
       "name": "Services",

@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://goodreds.net/examples/flickevents/</loc>
+    <loc>https://goodreds.net/examples/forms/</loc>
     <lastmod>2021-02-01</lastmod>
   </url>
 
   <url>
-    <loc>https://goodreds.net/examples/evercondo/</loc>
+    <loc>https://goodreds.net/examples/fit_and_finish/</loc>
     <lastmod>2021-02-15</lastmod>
   </url>
 
   <url>
-    <loc>https://goodreds.net/examples/qbasis/</loc>
+    <loc>https://goodreds.net/examples/landing_pages/</loc>
+    <lastmod>2021-02-18</lastmod>
+  </url>
+
+  <url>
+    <loc>https://goodreds.net/posts/2021/02/finally-settled-with-11ty%20copy/</loc>
     <lastmod>2021-02-18</lastmod>
   </url>
 
@@ -22,12 +27,12 @@
   </url>
 
   <url>
-    <loc>https://goodreds.net/examples/tinder/</loc>
+    <loc>https://goodreds.net/examples/templates_for_common_tasks/</loc>
     <lastmod>2021-02-19</lastmod>
   </url>
 
   <url>
-    <loc>https://goodreds.net/examples/envato-marketplaces-logo/</loc>
+    <loc>https://goodreds.net/examples/cards/</loc>
     <lastmod>2021-02-20</lastmod>
   </url>
 

@@ -1,5 +1,5 @@
 ---
-metaTitle: buttons
+metaTitle: Buttons
 metaDescription: Buttons are the most important way to interaction between your users and your app or product.
 title: Buttons
 description: Buttons are the main currency on the web and as such is important to get them right. At their simplest level they can be clicked to carry out actions on behalf of the user. The first point is to ensure that the button description, in the form of the text on it, reflects the action that the user can expect to occur once clicked.

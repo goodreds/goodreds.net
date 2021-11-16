@@ -1,11 +1,11 @@
 ---
-metaTitle: FlickEvents
-metaDescription: Branding, web design & WordPress development for FlickEvents
-title: FlickEvents
+metaTitle: Forms
+metaDescription: Branding, web design & WordPress development for Forms
+title: Forms
 description: Makes event management and community engagement into as simple as the flick of a switch.
 testimonial: Kailoon is talented and sharp. Paired with a keen design sense and patience when dealing with clients, he’s a trustable resource to work with when it comes to branding and UI/UX works. I’ve entrusted him with the branding works of my 2 companies and will continue to do so in the future.
 clientName: Yao Quan
-clientPos: coFounder of FlickEvents
+clientPos: coFounder of Forms
 projectUrl: https://www.flickevents.com/
 dribbble: https://dribbble.com/kailoon/projects/142558-FlickEvents
 topColor:
