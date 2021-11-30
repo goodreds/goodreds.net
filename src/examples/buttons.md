@@ -4,10 +4,10 @@ metaDescription: Buttons are the most important way to interaction between your 
 title: Buttons
 description: Buttons are the main currency on the web and as such is important to get them right. At their simplest level they can be clicked to carry out actions on behalf of the user. The first point is to ensure that the button description, in the form of the text on it, reflects the action that the user can expect to occur once clicked.
 testimonial: Making sure that you get buttons right is the single most important aspect of effectively reaching out to your users, and hearing what they want back.
-clientName: Deb Loach
-clientPos: UX/UI Professor
+subjectName: Buttons
+subjectRank: Essentials
 projectUrl: https://www.Buttons/
-dribbble: https://dribbble.com/kailoon/projects/304610-99-co
+featuredImage: https://featuredImage.com/kailoon/projects/304610-99-co
 featuredImg: 99-featured
 bgColor: D5E7F3
 featured: true
@@ -17,46 +17,203 @@ year: 2021
 date: 2021-10-27
 ---
 
-<div class="col-start-3 col-end-9">
+<div class="col-start-2 col-end-10 article">
 
-### The lowdown
+# Introduction
 
-[Buttons](http://Buttons/) are a way to present your users with choices and then have your app, product or site respond apprpriately to that choice. Buttons traditionally have an action written on them, and this gives the user confidence in what they should expect to happen when they click on it.
+Buttons are the main currency on the web, and as such, it is important to get them right. At their simplest level, they can be clicked to carry out actions on behalf of the user. The action undertaken is typically written on the button, akin to real-world buttons found on game controllers, cars etc. The first point is to ensure that the button description, in the form of the text on it, reflects the action that the user can expect to occur once clicked.
 
-### The common problems
+# Types of buttons
 
-Buttons should look like buttons - we use switches and buttons without much prompting in the real-world and breaking that paradigm online is an all too common occurence. The reasons for this can be attributed, in reverse order of importance, to ineffective design of the button, poor accompanying labels, and a failure to plan what you want a user to achieve when they do click.
+As a general rule, the less a button stands out, the less it will be utilised by the user, so removing elements from the button such as fills and icons begins to degrade how easily a user may identify it as a button. As such, it is better to ensure that prominent buttons do actually look like buttons, reserving them for primary actions and prominent buttons such as call-to-action buttons.
 
-### Ineffective button design
+The one exception is text link buttons which lack any decoration beyond, usually, an underline. These buttons are a throwback to the early days of the minimally-styled web, and as such are one of the oldest and longest lasting design patterns. Nearly all users intuitively understand the underlined words represent text link 'buttons'.
 
-- insufficient sizing through failure to understand common human design interface rules - e.g. a button should be a minimum of 44 points in vertical height, with somewhere around the 50 point mark being most comfortable for users on smaller screens
-- unenticing colours have the understandable effect of turning users off - e.g. the [brown Zune music player](https://www.geekwire.com/2011/fond-memories-microsoft-zune-brown/) failed to displace the iPod
-- making buttons hard to discern or non-standard shapes and sizes is almost guaranteed to ensure that users miss them - [Google's recent 'birthday' discounts](see screenshot and host on cloudinary?) had to mention which bits to click to find the discount vouchers on their bespoke site.
+# Which styles of button to use and where
+[Which style of buttons to use for which button types](https://www.notion.so/adc27e617bbe40b18e51151623e097ab)
 
-## Poor labelling
+# Elements of a button
+Buttons typically consist of:
 
-- If you want the user to click then let them know clearly and consisely what they can expect to happen
+- Clickable button element
+- Label
+- Icon (Optional)
+- Drop shadow (optional)
 
-## Having a plan for the user to follow
+<figure>
+  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1648%253A18277" allowfullscreen></iframe>
+<figcaption>
+  Anatomy of a typical button
+</figcaption>
+</figure>
 
-Makig sure that the user isn't overloaded with extraeous steps along the process that the button(s) lead them.
+# Internal spacing
+<figure>
+  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1648%253A18279" allowfullscreen></iframe>
+<figcaption>
+  Internal and external padding proportions
+</figcaption>
+</figure>
 
-{% figure 'mzhgwgk6iryjvmjdfqtz' %}
+Inside the button you should use the correct internal spacing to generate a minimum height for the button of 54-60px. So if the base-size for you design (typically the font size) is 16px then that would equate to:
 
-</div>
+```
+$(54px - 16px)/2 = 19px$
+```
 
-<div class="col-start-2 col-end-10">
-{% figure '99-add-listing', 'add listing process', 'The process of listing property on the platform.' %}
-</div>
+Using the 19px of vertical padding above and below the text label of the button gives a correct minimum height for the button of 54px:
 
-<div class="col-start-3 col-end-9">
+```
+$16px + (19px * 2) = 54px$
+```
 
-It is always challenging when dealing with data driven app with such small screen real estate. Once again, I strive for minimalistic and simplicity.
+There is more leeway with the button width but a good rule for a balanced result is to aim for double the amount of the vertical internal padding applied as horizontal padding:
 
-### The Result
+```
+$19px * 2 = 38px$
+```
 
-My design was not accepted. I am not sure what is the reason, however, this is a special project, because I almost landed a permanent job. After meeting the founder and get to know the office culture, I am excited to have the opportunity to work with such a passionate and energized team.
+## Internal spacing
+Ensure that your buttons contain some internal padding to increase the clickable area. This makes the button easier to use. A minimum height for a button would be around 56-64px (44-48pt) so this is a good aim for the clickable area of the button.
 
+As a rule of thumb aiming for (a minimum of) twice the horizontal-padding than the vertical-padding will give you nicely proportioned buttons.
+
+
+# Prominent buttons
+Use Primary or call-to-action buttons for the most prominent actions. If the button is going to finalise a process, including charging a user for a service, then use some kind of accompanying text to let the user know what is about to occur when the button is clicked.
+
+<figure>
+  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1648%253A18717" allowfullscreen></iframe>
+<figcaption>
+  Prominence for buttons
+</figcaption>
+</figure>
+
+# Button states
+You must design a full range of states for each button for the purposes of giving feedback to your users as to which parts of the user interface can be interacted with, which parts are currently active, and which parts may be off-limits or disabled currently. The states to include are as follows:
+
+- Default (or initial) state
+- Hover
+- Clicked
+- Disabled
+
+<figure>
+  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1663%253A19010" allowfullscreen></iframe>
+<figcaption>
+  Button states
+</figcaption>
+</figure>
+
+# Paired buttons
+Put the actionable part on the right-hand side for English or other left-to-right direction languages. Reverse this for right-to-left languages such as Arabic, where the action button should be placed to the left-hand side.
+
+<figure>
+  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1663%253A19061" allowfullscreen></iframe>
+<figcaption>
+  Paired buttons
+</figcaption>
+</figure>
+
+# Corner radius
+Buttons should generally try to mimic how buttons appear in the real-world. Consequently, it is best to avoid irregular shapes and simply rely upon the common rectangles, pills and squares.
+
+Sharp buttons have a sharp, professional feel and are typically more elegant than rounded buttons.
+
+Rounded buttons feel 'nicer' to the user - the eye follows the curves of the corners more readily than sharp button corners.
+
+<figure>
+  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1663%253A19113" allowfullscreen></iframe>
+<figcaption>
+  Corner radius
+</figcaption>
+</figure>
+
+Whichever corner radius you decide upon, you must ensure that it remains consistent across your whole site, and this means keeping a close eye on diagonal spacing between the button and the edge of neighbouring elements.
+
+# Button text size
+<figure>
+  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1663%253A19153" allowfullscreen></iframe>
+<figcaption>
+  Button text sizing
+</figcaption>
+</figure>
+
+No smaller than 20px (16pt) is best, but you are free to make your button text match your base font size (often 16px or 12pt) but be careful about going any smaller than 13px (10pt) if you want the user to click it.
+
+# Button shadows
+A small, subtle shadow on a **filled** button can help it stand out more effectively for the user, giving them some indication that the element is clickable.
+
+
+# Button widths
+Adding around a minimum 40px (32pt) of horizontal padding outside the text / text+icon on a button gives a nice target for your users to hit. If you need to align to a grid then do so but do not go below the above rule of thumb. If you need to align a button with a form then by all means go larger too - full width buttons are acceptable if there is only one or two - e.g. 'Next step' in a multipage form.
+
+# Examples
+
+## Example button
+<figure>
+  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1923%253A20540" allowfullscreen></iframe>
+<figcaption>
+  Example button
+</figcaption>
+</figure>
+
+## Example code for example button
+```css
+// Colours
+background: hsba(201, 98%, 63%, 1);
+background: hsba(200, 99%, 78%, 1);
+background: hsba(213, 25%, 100%, 1);
+background: hsba(204, 12%, 100%, 1);
+background: hsba(201, 26%, 99%, 1);
+background: hsba(198, 77%, 97%, 1);
+background: hsba(204, 6%, 100%, 1);
+
+// Button */
+// Auto Layout */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20.0388px 40.0777px;
+
+position: static;
+width: 269px;
+height: 70.08px;
+left: 0px;
+top: calc(50% - 70.08px/2 - 23px);
+
+// Swatches/sky/400 */
+background: #38BDF8;
+
+// Swatches/sky/50 */
+
+border: 3.33981px solid #F0F9FF;
+box-shadow: 0px 0px 12px 4px #1E416A;
+border-radius: 6.67961px;
+
+// Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 16px 0px;
+
+// Helper text */
+
+position: static;
+width: 251px;
+height: 30px;
+left: 0px;
+top: 86.08px;
+
+// Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 16px 0px;
+```
 </div>
 <div class="col-start-2 col-end-10">
 

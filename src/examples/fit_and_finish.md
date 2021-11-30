@@ -4,10 +4,10 @@ metaDescription: Evercondo is a platform that allows condominium and high-rise b
 title: Fit & finish and the little professional touches
 description: Evercondo is a platform that allows condominium and high-rise based property managers and owners to access management tasks.
 testimonial:
-clientName:
-clientPos:
+subjectName:
+subjectRank:
 projectUrl: https://www.crunchbase.com/organization/evercondo
-dribbble: https://dribbble.com/kailoon/projects/282273-Evercondo-iOS-App
+featuredImage: https://featuredImage.com/kailoon/projects/282273-Evercondo-iOS-App
 featuredImg: evercondo-featured
 bgColor: CEDCE8
 featured: false
