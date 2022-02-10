@@ -1,11 +1,11 @@
 ---
 layout: examples.njk
 metaTitle: Examples
-title: Examples
-description: This area contains the examples that demonstrate some of the UI/UX principles covered elsewhere on the site.
+title: Getting the basics right
+description: Some of the UI/UX principles that are going to help you today.
 metaDescription: Examples of UI/UX principles.
 templateEngineOverride: njk,md
 eleventyNavigation:
-  key: examples.
+  key: examples
   order: 2
 ---

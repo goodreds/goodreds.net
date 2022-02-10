@@ -1,15 +1,43 @@
-<div class="{%- if topColor -%}{{ topColor }}{%- endif -%} {% if page.url !== '/' %}pb-32 lg:pb-64{% endif %}">
-  <header class="relative max-w-screen-xl mx-auto h-24 p-5 md:flex md:justify-between md:items-center">
-    <!-- logo -->
+<div
+  class="{%- if topColor -%}{{
+    topColor
+  }}{%- endif -%} {% if page.url !== '/' %}pb-32 lg:pb-64{% endif %}"
+>
+  <header
+    class="relative max-w-screen-xl mx-auto h-24 p-5 md:flex md:justify-between md:items-center"
+  >
+    <!-- Logo -->
     <a href="/" title="back to homepage" class="logo">
-      <svg class="dark:text-white transform scale-75" width="52" height="100%" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2">
+      <svg
+        class="dark:text-white transform"
+        width="39"
+        height="100%"
+        viewBox="0 0 500 500"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xml:space="preserve"
+        xmlns:serif="http://www.serif.com/"
+        style="
+          fill-rule: evenodd;
+          clip-rule: evenodd;
+          stroke-linejoin: round;
+          stroke-miterlimit: 2;
+        "
+      >
         <g transform="matrix(5,0,0,5,0,0)">
           <path
             d="M62.4,28.9C63,29.9 64,30.4 65.4,30.4C66.6,30.4 67.6,30 68.4,29.2C69.2,28.4 69.6,27.4 69.6,26.2C69.6,24.4 68.8,22.9 67.3,21.8C65.8,20.6 63.9,20.1 61.6,20.1C58.8,20.1 56.6,20.8 55,22.2C53.4,23.6 52.6,25.5 52.5,28L49.7,27.9C45.4,27.9 41.8,29 38.9,31.3C36,33.6 34.5,36.4 34.5,39.8C34.5,42.1 35.4,44.2 37.1,46.2C34.9,47.2 33.4,48.2 32.6,49.3C31.7,50.4 31.3,51.9 31.3,53.8C31.3,57.4 33.2,59.6 37.1,60.4C32.2,61.9 29.8,64.6 29.8,68.4C29.8,72 31.6,74.8 35,77C38.4,79.2 43.2,80.2 49,80.2C55.5,80.2 60.6,79 64.4,76.5C68.2,74 70.1,70.6 70.1,66.3C70.1,62.9 68.9,60.3 66.3,58.5C63.8,56.7 60.2,55.8 55.6,55.8L51,55.7L50.2,55.7C47.4,55.7 45.7,55.6 44.9,55.5C42.6,55.1 41.4,54.1 41.4,52.5C41.4,51.8 41.8,51.2 42.5,50.6L42.9,50.7C45.5,51.8 48.1,52.4 50.7,52.4C55.4,52.4 59.2,51.3 62,49C64.9,46.7 66.3,43.7 66.3,40C66.3,35.1 64,31.8 59.3,30.1C59.2,30 59.2,29.7 59.2,29.4C59.2,28 59.7,27.3 60.7,27.3C61.1,27.3 61.5,27.5 61.7,27.8L62.4,28.9ZM50,0C77.6,0 100,22.4 100,50C100,77.6 77.6,100 50,100C22.4,100 0,77.6 0,50C0,22.4 22.4,0 50,0Z"
             style="fill: rgb(220, 38, 38); fill-rule: nonzero"
           />
-          <path d="M53.8,36.7C54.7,37.6 55.1,38.7 55.1,40.1C55.1,41.4 54.6,42.5 53.8,43.4C52.9,44.3 51.8,44.8 50.4,44.8C49,44.8 47.9,44.3 47,43.4C46.1,42.5 45.7,41.3 45.7,40C45.7,38.6 46.2,37.5 47,36.6C47.9,35.7 49,35.3 50.4,35.3C51.8,35.3 52.9,35.7 53.8,36.7Z" style="fill: rgb(220, 38, 38); fill-rule: nonzero" />
-          <path d="M52.9,64.1C56.7,64.1 58.5,65.1 58.5,67.2C58.5,69.8 55.6,71 49.9,71C44.2,71 41.4,69.7 41.4,67.2C41.4,65.8 42.5,64.7 44.7,63.9C46.4,64.1 47.9,64.2 49.1,64.2L51.1,64.2C52.1,64.1 52.7,64.1 52.9,64.1Z" style="fill: rgb(220, 38, 38); fill-rule: nonzero" />
+          <path
+            d="M53.8,36.7C54.7,37.6 55.1,38.7 55.1,40.1C55.1,41.4 54.6,42.5 53.8,43.4C52.9,44.3 51.8,44.8 50.4,44.8C49,44.8 47.9,44.3 47,43.4C46.1,42.5 45.7,41.3 45.7,40C45.7,38.6 46.2,37.5 47,36.6C47.9,35.7 49,35.3 50.4,35.3C51.8,35.3 52.9,35.7 53.8,36.7Z"
+            style="fill: rgb(220, 38, 38); fill-rule: nonzero"
+          />
+          <path
+            d="M52.9,64.1C56.7,64.1 58.5,65.1 58.5,67.2C58.5,69.8 55.6,71 49.9,71C44.2,71 41.4,69.7 41.4,67.2C41.4,65.8 42.5,64.7 44.7,63.9C46.4,64.1 47.9,64.2 49.1,64.2L51.1,64.2C52.1,64.1 52.7,64.1 52.9,64.1Z"
+            style="fill: rgb(220, 38, 38); fill-rule: nonzero"
+          />
         </g>
       </svg>
       <!-- <svg class="dark:text-white transform scale-75" width="52" height="52" xmlns="http://www.w3.org/2000/svg" fill="currentColor" xmlns:v="https://vecta.io/nano">
@@ -17,16 +45,35 @@
         <path d="M13 39L0 52V13L13 0V39Z" />
       </svg> -->
     </a>
+    <!-- Navigation -->
     <nav class="hidden md:block py-1">
       {% set navPages = collections.all | eleventyNavigation %}
-      <ul class="text-right">
+      <ul class="text-right text-lg">
         {%- for entry in navPages %}
         <li class="inline-block mr-5">
-          <a href="{{ entry.url | url }}" class="font-bold transition-colors dark:hover:text-yellow-200 hover:text-black {% if entry.url == page.url %} dark:text-yellow-200 text-black {% else %}dark:text-white text-gray-700 {% endif %}">{{ entry.title }}</a>
+          <a
+            href="{{ entry.url | url }}"
+            class="font-normal tracking-wide transition-colors dark:hover:text-yellow-400 hover:text-fuchsia-600
+            {% if entry.url == page.url %}
+                dark:text-yellow-200
+                text-stone-900
+              {% else %}
+                dark:text-stone-200
+                text-stone-700
+            {% endif %}"
+            >{{ entry.title }}</a
+          >
         </li>
         {%- endfor %}
         <li class="inline-block">
-          <a href="{{ metadata.author.mailtolink }}" title="get in touch" target="_blank" rel="noreferrer" class="text-gray-800 dark:text-yellow-300 py-2 px-5 rounded-full font-bold border-2 border-gray-900 dark:border-yellow-100 border-opacity-20 transition-colors hover:border-opacity-100"><span>Get in touch</span> </a>
+          <a
+            href="{{ metadata.author.mailtolink }}"
+            title="get in touch"
+            target="_blank"
+            rel="noreferrer"
+            class="text-gray-800 dark:bg-yellow-300 dark:text-yellow-600 py-2 px-5 rounded-full font-bold border-2 border-gray-900 dark:border-yellow-500 border-opacity-20 transition-colors hover:border-opacity-100"
+            ><span>Contact</span>
+          </a>
         </li>
       </ul>
     </nav>

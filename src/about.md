@@ -2,43 +2,31 @@
 layout: single.njk
 metaTitle: About
 metaDescription: Know more.
-title: Hi.
-description: Helping you to understand the why and the how of web design.
+title: This is me.
+description: Helping you to understand the how and the why of  the web for over 20 years.
 featuredImg:
 templateEngineOverride: njk,md
 eleventyNavigation:
-  key: about.
+  key: about
   order: 1
 ---
-
+<!-- Note: 2 column arrangment -->
 <div class="col-start-1 col-end-6">
 
-### Me
+## History
 
-I started my web related career in 2006. I have a bachelor degree in Multimedia & Technology, but everything I know of and on the web today is self-taught. I founded LoonDesign Studio and started providing creative design & web development services since 2008.
+I have over two decades experience designing and building for the web, and graduated in IT from RMIT. I've worked on everything from small businesses, charities, entertainment and music sites to medical, public health and government projects. With a broad knowledge of how to help clients get their best possible results, I feel well placed to offer the best of my experience and advice to help you too.
 
-I am more of a designer-developer hybrid, or a design-minded front-end developer or [front-end designers](https://bradfrost.com/blog/post/frontend-design/ 'visit site'). I do branding, logo design, graphic design and I also write HTML, CSS, and presentational JavaScript that powers web user interfaces with a focus on responsive design, semantic markup, accessibility, and performance.
-
-- **Standard-compliant**.
-- **Optimised for mobile** as I take the mobile-first approach.
-- **Fully responsive** as I use custom CSS or TailwindCSS.
-- **Cross-browser compatible** and no IE, please.
-- **Accessibility**, a product needs to be usable by users of assistive technologies by default, whenever possible.
-- **Vanilla Javascript** whenever possible.
-- **Optimised for performance** because page speed is google ranking factor.
-
-I work remotely from my home office in Malaysia.
+Historically my experience was formed via vanilla HTML, CSS, Javascript and a decent chunk of time buidling, deploying and maintaining Wordpress sites.
 
 </div>
 
 <div class="col-start-7 col-end-12">
 
-### Now
+## Future
 
-Right now, I contracted to Envato as a senior reviewer for one of the largest digital marketplaces in the world — [ThemeForest](https://themeforest.net 'goto themeforest'). I have been doing contract work with Envato since 2008, shaping the content library for **ThemeForest** & **Envato Elements**. You might remember me as kailoon the reviewer from ThemeForest.
+My particular areas of interest currently include the JAMStack and design processes, particularly design systems.
 
-I also work with companies and clients personally, building web sites and application UIs with a strong focus on **responsive design, accessibility, performance**. Over the years, I have the honour to collaborate with clients ranging from startups to SME. A few of them has grown successfully or getting acquired. Some of my featured clients are **Envato**, **99.co**, **Evercondo**, **MeetPoppy** & **Qbasis**. [Check out my portfolio](https://kailoon.com/examples/).
-
-Drop me a line at **chankailoon@gmail.com** if you have an idea in mind that we can work together. The more details about your project you include in your message, the faster I will get back to you. You’ll hear back from me within 1 - 3 business days. I look forward to hearing from you. 🙂
+My latest project, **re:designsystems**, is intended to provide an expert analysis of client's sites with reports suggesting where to make the 'easy-wins' by improving what you already have.
 
 </div>

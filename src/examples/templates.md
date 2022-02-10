@@ -3,14 +3,14 @@ metaTitle: Templates
 metaDescription: Templates for the most common social media networks.
 title: Templates
 description: Figma templates for the main social media netwrok accounts.
-testimonial: These templates should save you time and effort ensuring that you are exporting your images at the correct sizes.
+excerptText: These templates should save you time and effort ensuring that you are exporting your images at the correct sizes.
 subjectName: Templates
 subjectRank: Essentials
 projectUrl: https://www.Buttons/
-featuredImage: https://featuredImage.com/kailoon/projects/304610-99-co
-featuredImg: 99-featured
+dribbble: https://dribbble.com/kailoon/projects/304610-99-co
+featuredImg: generic_placeholder
 bgColor: D5E7F3
-featured: true
+featured: false
 span: true
 tasks: UI
 year: 2021

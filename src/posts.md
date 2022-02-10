@@ -6,6 +6,6 @@ title: Journal
 description: Thoughts & things happened in my life.
 templateEngineOverride: njk,md
 eleventyNavigation:
-  key: journal.
+  key: posts
   order: 3
 ---

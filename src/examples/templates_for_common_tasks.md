@@ -3,13 +3,13 @@ metaTitle: Templates for common tasks
 metaDescription: Tinder is a software development company based in Singapore, it is a subsidiary company for any cool side projects.
 title: Templates for common tasks
 description: Tinder ( previously Tinder Lab ) is a software development company based in Singapore, it is a subsidiary company for any cool side projects.
-testimonial: Kailoon is talented and sharp. Paired with a keen design sense and patience when dealing with clients, he’s a trustable resource to work with when it comes to branding and UI/UX works. I’ve entrusted him with the branding works of my 2 companies and will continue to do so in the future.
+excerptText: Kailoon is talented and sharp. Paired with a keen design sense and patience when dealing with clients, he’s a trustable resource to work with when it comes to branding and UI/UX works. I’ve entrusted him with the branding works of my 2 companies and will continue to do so in the future.
 subjectName: Yao Quan
 subjectRank: coFounder of Tinder
 projectUrl:
-featuredImage: https://featuredImage.com/kailoon/projects/64016-Tinder
+dribbble: https://dribbble.com/kailoon/projects/64016-Tinder
 topColor:
-featuredImg: tinder-featured
+featuredImg: generic_placeholder
 tasks: Logo Design & Brand Identity
 tags: ['graphic design']
 year: 2012

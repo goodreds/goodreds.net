@@ -74,43 +74,29 @@
   "services": [
     {
       "name": "Services",
-      "description": "I focus on human-centric design (HCD) and practical design practice to achieve lasting solutions. It can be a digital products from scratch or upgrade existing one to cope with new demands / market."
+      "description": "The three available tiers are as follows:",
+      "heroImg": "https://res.cloudinary.com/goodreds/image/upload/v1644285775/goodreds.net/form_field_variants.png"
     },
     {
-      "name": "01. Branding & Identity",
-      "description": "A strong brand is important for your business especially startup or SME, to expand your digital reach and communicate with your customers.",
-      "tags": ["Style Exploration", "Visual Language", "Brand Guides"]
+      "name": "01. Essentials",
+      "description": "Getting the following areas right gives a strong foundation to making positive qualitative changes.",
+      "tags": ["Buttons", "Cards", "Forms", "Inspiration", "Landing pages", "Professional touches", "Templates"]
     },
     {
-      "name": "02. Web / App Design",
-      "description": "I use a structured design process for medium to large scaled projects. The process allow me to prototype complex ideas that can be easily transformed into fully functional solutions.",
-      "tags": [
-        "User Interfaces",
-        "Design Systems",
-        "Illustrations",
-        "Mobile Apps",
-        "Web Design",
-        "Digital Products"
-      ]
+      "name": "02. Deluxe",
+      "description": "These areas are ideal make launch a stronger impression with your users.",
+      "tags": ["Alerts & states",  "Colour", "Illustrations", "Layout & Grid", "Navigation", "Photos", "Tables", "Typography"]
     },
     {
-      "name": "03. Web Development",
-      "description": "I always make sure the projects is developed with the latest technology and it is easy to use or maintained by the clients. Check out my <a href='https://github.com/goodreds/resume' target='_blank' rel='noreferrer'>skillset</a> & <a href='https://github.com/goodreds/certificates' target='_blank' rel='noreferrer'>certificates</a>.",
-      "tags": [
-        "Front-end Development",
-        "Responsive Website Development",
-        "WordPress",
-        "Grav",
-        "Hugo",
-        "React",
-        "Eleventy"
-      ]
+      "name": "03. Complete",
+      "description": "The final touches that will ensure that all bases are covered and that you have a design system to build on from here.",
+      "tags": ["Design process",  "Gradients",  "Icons",   "Objects/Components", "Prototyping",  "Screens", "Shadows & depth"]
     }
   ],
-  "featuredWorkTitle": "Featured",
-  "featuredWorkDescription": "Which parts of the design of a good UI are the most impactful? And in addition, which ones are easiest to get wrong? This section gives you the lowdown on how to begin to address some of the more common problems discovered during audits. These can form the steps to help you begin to utilise the full power of your product, without throwing away good work that you've already invested in. This is a way to polish what you already have. Find out more.",
+  "elevatorPitchTitle": "Featured",
+  "elevatorPitchDescription": "Which parts of the design of a good UI are the most impactful? Which ones are easiest to get wrong? How can you improve what you already have?",
   "browseFullPortfolio": "Browse full portfolio",
-  "footerCreditLine1": "2021 © goodreds.",
+  "footerCreditLine1": "2022 © goodreds.",
   "footerCreditLine2": "This site was designed in ",
   "builtTools": {
     "figma": "https://www.figma.com/",

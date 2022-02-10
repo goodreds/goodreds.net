@@ -7,7 +7,11 @@ const markdownitlinkatt = require('markdown-it-link-attributes')
 const pluginRss = require('@11ty/eleventy-plugin-rss')
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const markdownItAnchor = require('markdown-it-anchor')
-
+const anchor = require('markdown-it-anchor')
+const md = require('markdown-it')()
+md.use(anchor, {
+	permalink: anchor.permalink.headerLink()
+})
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addWatchTarget('./tailwind.config.js')
 	eleventyConfig.addWatchTarget('./src/css/tailwind.css')
@@ -52,7 +56,7 @@ module.exports = function (eleventyConfig) {
 		const src = `${fetchBase}q_auto,f_auto,w_400/${path}.${eleventyConfig.format}`
 		const srcset = eleventyConfig.srcsetWidths
 			.map(({ w, v }) => {
-				return `${fetchBase}dpr_auto,q_auto,w_${w}/kailoon.com/${path}.${eleventyConfig.format} ${v}w`
+				return `${fetchBase}dpr_auto,q_auto,w_${w}/goodreds.net/${path}.${eleventyConfig.format} ${v}w`
 			})
 			.join(', ')
 
@@ -68,7 +72,7 @@ module.exports = function (eleventyConfig) {
 		const src = `${fetchBase}q_auto,f_auto,w_400/${path}.${eleventyConfig.format}`
 		const srcset = eleventyConfig.srcsetWidths
 			.map(({ w, v }) => {
-				return `${fetchBase}dpr_auto,q_auto,w_${w}/kailoon.com/${path}.${eleventyConfig.format} ${v}w`
+				return `${fetchBase}dpr_auto,q_auto,w_${w}/goodreds.net/${path}.${eleventyConfig.format} ${v}w`
 			})
 			.join(', ')
 

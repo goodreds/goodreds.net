@@ -1,0 +1,47 @@
+<!-- The data for elevatorPitch is stored in data.json. -->
+<section id="elevatorPitch" class="pb-24 md:pb-36 bg-stone-50 dark:bg-stone-900">
+  <div class="px-5 max-w-screen-xl lg:mx-auto">
+    <div class="py-10 grid gap-x-2 gap-y-5 sm:gap-y-2 grid-cols-1 md:grid-cols-3 md:grid-flow-row-dense">
+
+      <div class="md:col-span-3 mb-16">
+        <!-- <h3 class="text-rose-700 mb-10 text-sm font-bold tracking-widest uppercase dark:text-gray-400">{{ data.elevatorPitchTitle }}</h3> -->
+        <span class="block text-2xl tracking-tight text-gray-700 dark:text-gray-300 mb-10 md:w-2/3">
+        {{ data.elevatorPitchDescription }}
+        </span>
+        <!-- <button class="buttonDefaults buttonPrimary" href="#">Primary</button> -->
+        <!-- <button class="buttonDefaults buttonSecondary">Secondary</button> -->
+        <!-- <button class="buttonDefaults buttonSecondaryAlt">SecondaryAlt</button> -->
+        <!-- <button class="buttonDefaults buttonDisabled">Disabled</button> -->
+        <!-- <button class="buttonDefaults buttonWarning">Warning</button> -->
+        <!-- <button class="buttonDefaults buttonError">Error</button> -->
+        <!-- <button class="buttonDefaults buttonSuccess">Success</button> -->
+        <div class="flex">
+        <button class="buttonDefaults w-1/3 buttonTertiary transition">Tertiary</button>
+        <button class="buttonDefaults w-1/3 buttonCTA transition delay-150 duration-300 ease-in-out">Call To Action &rarr;</button>
+        </div>
+      </div>
+
+      {% for item in collections.examples | reverse%}
+      <!-- if featured:true in the mardown file for the subject, it will be shown here in a 3-column grid -->
+        {% if item.data.featured %}
+          <a
+          href="{{item.url}}"
+          title="Find out more about {{item.data.title}}"
+          class="flex flex-col justify-between post relative md:transform md:hover:-translate-y-2 md:transition-transform rounded-md overflow-hidden shadow-sm">
+            <article class="border-opacity-50 border-gray-300 border bg-{{item.data.tailwindAccentColour}}-200 bg-gradient-to-br from-{{item.data.tailwindAccentColour}}-200 to-{{item.data.tailwindAccentColour}}-300">
+            <header class="p-4 lg:p-8 h-48 sm:h-48 md:h-48 relative">
+              <span class="text-gray-800 mix-blend-color-burn text-5xl tracking-tighter font-bold block">{{ item.data.title }}</span>
+              <span class="text-stone-700 bg-stone-100 tracking-wider rounded-xl right-2 px-4 py-1 text-xs block bottom-2 absolute text-base font-light opacity-80 shadow-inner">{{ item.data.tasks }}</span>
+              <p class="text-sm text-stone-900 mix-blend-color-burn">{{item.data.excerptText}}</p>
+            </header>
+            <picture class="block rounded-b-md overflow-hidden max-w-full">
+              {% respimg item.data.featuredImg, item.data.title, "(min-width: 48em) 48em, 100vw" %}
+            </picture>
+            </article>
+          </a>
+        {% endif %}
+      {% endfor %}
+
+    </div>
+  </div>
+</section>

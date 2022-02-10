@@ -3,17 +3,18 @@ metaTitle: Forms
 metaDescription: Forms are your way to understand the user
 title: Forms
 description: Forms allow the users to send information back to the server, and by extension, you as the site owner. It is imperative to understand how to make forms as easy as possible for the user.
-testimonial: Forms allow the users to send information back to the server, and by extension, you as the site owner. It is imperative to understand how to make forms as easy as possible for the user.
+excerptText: Forms allow the users to send information back to the server, and by extension, you as the site owner. It is imperative to understand how to make forms as easy as possible for the user.
 subjectName: Forms
 subjectRank: Essentials
-projectUrl: https://www.flickevents.com/
-featuredImage: https://res.cloudinary.com/goodreds/image/upload/v1638237045/form_field_variants.png
+# projectUrl: https://www.flickevents.com/
+# dribbble: https://dribbble.com/shots/15005316-Personal-Site
 topColor:
 bgColor: D3F2E3
 featured:
-featuredImg: flickevents-featured
+# featuredImg is the name of the file on Cloudinary where the images are stored
+featuredImg: form_field_variants
 tasks: UI and UX
-tags: ['graphic design', 'web design']
+tags: ['example', 'graphic design', 'web design']
 year: 2021
 date: 2021-11-30
 ---
@@ -59,7 +60,7 @@ Labels should use Title-Case for easier scanning for the user. UPPERCASE titles 
 
 Labels should be spaced no greater than the cap-height (height of capital letter) away from the field that they are explaining. Try doubling this space distance between the bottom of one text-field to the top of the next label - this should give you a visually-pleasing result.
 
-<figure>
+<figure loading="lazy">
   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="300" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D277%253A127" allowfullscreen></iframe>
 <figcaption>
   Basic form field anatomy
@@ -73,12 +74,12 @@ Be wary of using icons alone in place of text labels, partially because of the s
 - Magnifying glass to represent the search field
 - Eye icon for revealing an obfuscated password field
 - An 'X' to allow a field to be cleared - but be careful to not allow this to be mistaken for a validation error instead
-<figure>
+<!-- <figure loading="lazy">
   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1783%253A18446" allowfullscreen></iframe>
 <figcaption>
   Guidelines for using icons in form fields
 </figcaption>
-</figure>
+</figure> -->
 
 ### Styling
 
@@ -105,12 +106,12 @@ Be wary of using icons alone in place of text labels, partially because of the s
 - **Social media logins are easier for the user to fill in their details**\
   To use the Apple, Google or Facebook (or GitHub etc) login options, search for **OAuth** to get started
 - **Design all the states for form elements. These are usually, but not exclusively:**\
-<figure>
+<!-- <figure loading="lazy">
   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D277%253A86" allowfullscreen></iframe>
   <figcaption>
     Different states for form fields
   </figcaption>
-</figure>
+</figure> -->
 
 - Inactive
 - Focused
@@ -122,12 +123,12 @@ Use border-colour, icons (crosses and ticks for validation), text weight, and ba
 
 For fields where an error can be thrown, an explanatory text label is imperative to the user understanding what they need to do to fix it quickly. What is readily apparent to you as the designer, developer or site owner, may not be understood by the user. You can demonstrate by way of an example (e.g. email must be name@domain.com). These helper messages should appear near the field which they refer; avoid putting them all together at the start or end of the form.
 
-<figure>
+<!-- <figure loading="lazy">
   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1761%253A17767" allowfullscreen></iframe>
 <figcaption>
   Create a variant for each possible state of the form fields
 </figcaption>
-</figure>
+</figure> -->
 
 - **Make each section of a multi-stage form as short as possible**\
   No more than 5 fields is good, and use multi-steps to complete the total form
@@ -135,12 +136,12 @@ For fields where an error can be thrown, an explanatory text label is imperative
   The user will have an easier time scanning your form if it arranged vertically. Avoid doubling up columns as it makes your form more difficult to scan for the user.
 - **Be clear about why you need certain information from the user**\
  A wary user may choose to not fill out the form if the information you are requesting is not justified from their perspective. For example, if you need the phone number of a customer to give them shipping updates, then let them know this with explanatory text to that effect.
-  <figure>
+  <!-- <figure loading="lazy">
   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1791%253A18448" allowfullscreen></iframe>
   <figcaption>
     Form fields: Excessive information requests
   </figcaption>
-  </figure>
+  </figure> -->
 
 - **Only make essential information required\***\
   If information from the user is 'nice to have', rather than 'essential', make its collection optional. And rather than rely upon asterisks, use the word 'optional' as it's clearer for the user.
@@ -153,12 +154,12 @@ For fields where an error can be thrown, an explanatory text label is imperative
 
 - **Real-time validation**\
   It is better UX to validate the form as you go, alerting the user to any problems as they are focused on that particular field at that time. Do not simply validate on submission, presenting the user with a whole set of invalidated field error messages.
-  <figure>
+  <!-- <figure loading="lazy">
   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1792%253A18482" allowfullscreen></iframe>
 <figcaption>
   Form fields: Real-time validation
 </figcaption>
-</figure>
+</figure> -->
 
 - **Test your forms**\
   Find some real users to test out your forms. They often can inform you where parts that you think are self-evident are lacking. As forms are important, testing them is paramount.
@@ -179,28 +180,28 @@ For fields where an error can be thrown, an explanatory text label is imperative
   For areas where you may have only 5 or fewer options, a dropdown can be too much. Instead, **experiment with radio buttons** in their place, as this is often a lot easier to use.
 
 - **Checkboxes**\
-  <figure>
+  <!-- <figure loading="lazy">
   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1795%253A18528" allowfullscreen></iframe>
 <figcaption>
   Form fields: Checkboxes are useful where more than one option is required. For the styling of checkboxes, a tick is required and the background-fill colour should be changed to the accent colour
 </figcaption>
-</figure>
+</figure> -->
 
 - **Checkboxes and switches are similar but different**\
-<figure>
+<!-- <figure loading="lazy">
   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1798%253A18478" allowfullscreen></iframe>
 <figcaption>
   Form fields: As a general rule, switches are best reserved for simple on-off choices for single options where a toggle makes sense, whereas checkboxes can be used where there are multiple options for the user to choose
 </figcaption>
-</figure>
+</figure> -->
 
 - **Switches are for real-time actions**\
-  <figure>
+  <!-- <figure loading="lazy">
   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1798%253A18477" allowfullscreen></iframe>
 <figcaption>
   Form fields: **Switches, or toggles,** are mainly reserved for real-time actions, rather than on a form where the interaction would usually be expected after submission
 </figcaption>
-</figure>
+</figure> -->
 
 - **Switches on mobile**\
   Switches on mobile need to be a **minimum clearance** of 44 points (~58px) along each axis to make them easily selectable by the user's finger. In a desktop environment, it is ok to go a little smaller, around 30 points (40px) as the mouse is a higher definition selection tool.
@@ -216,20 +217,20 @@ For fields where an error can be thrown, an explanatory text label is imperative
 
 - **Sliders**\
   **Sliders** can work well if you have a group of semantically-linked options to choose from, and it makes sense for them to be arranged linearly. However, you should pay careful attention to ease-of-use and clarity. Ensure that the clickable area is generous and that clicking nearby an option makes the slider 'jump' to that point. If you have less than 4 options in a slider, consider using radio buttons instead.
-  <figure>
+  <!-- <figure loading="lazy">
   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1801%253A18533" allowfullscreen></iframe>
 <figcaption>
   Form fields: Ensure that the clickable area is generous and that clicking nearby an option makes the slider 'jump' to that point
 </figcaption>
-</figure>
+</figure> -->
 
 - **Consistency**\
-  <figure>
+  <!-- <figure loading="lazy">
   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1761%253A17767" allowfullscreen></iframe>
 <figcaption>
   Form fields: All designed form elements should be assembled beforehand, with their states/variations, to ensure **consistency** across the whole form
 </figcaption>
-</figure>
+</figure> -->
 
 - **Required or not?**\
   Always ask yourself if you really need the data from a particular field before you add it to the form. An overly-long form is a great way to ensure that it is rarely completed by the user. If a field is not necessary, don't add it.
@@ -242,29 +243,29 @@ For fields where an error can be thrown, an explanatory text label is imperative
 
 - **Clear labelling**\
   Don't have ambiguous labels on your form buttons - _next_ & _forward_ are poor choices, as they tell the user nothing about what they can expect if the form is submitted. Instead, use verbs or 'action verbs', such as _apply now, order now, get a quote, join us, sign up, start today, show prices, view benefits etc._
-  <figure>
+  <!-- <figure loading="lazy">
   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1830%253A19013" allowfullscreen></iframe>
   <figcaption>
     Form fields: Clear labelling
   </figcaption>
-  </figure>
+  </figure> -->
 
 - **Long forms**\
-  <figure>
+  <!-- <figure loading="lazy">
   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1835%253A18750" allowfullscreen></iframe>
 <figcaption>
   Form fields: With longer forms, group blocks together - e.g. addresses, subscription options, sizing etc.
 </figcaption>
-</figure>
+</figure> -->
 
 - **Multiple steps**\
   If the user requires multiple steps to complete a form, it is essential to give them feedback of their progress, such as a percentage value, steps completed / steps in total. Don't let your user lose their progress in a form, else your conversion rate will fall.
-  <figure>
+  <!-- <figure loading="lazy">
   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1848%253A19189" allowfullscreen></iframe>
   <figcaption>
     Break up longer forms and let the user know their approximate progress until completion
   </figcaption>
-  </figure>
+  </figure> -->
 
 - **Feedback via animations**\
   Find ways to demonstrate to the user that the form is interactive. A little animation can go a long way towards making a form more fun for the user. Think about ideas such as little bounce animations, or maybe a quick grow transition once a checkbox or radio button is triggered, or a pulsing red dot if a validation error occurs. They don't have to be anything too detailed, just little pointers to the user that they are making progress.
@@ -277,12 +278,12 @@ For fields where an error can be thrown, an explanatory text label is imperative
 
 - **Make your forms easy and fun to use**\
   Make your forms easier, and more pleasant to use for the user, and they will reward you with a higher conversion rate.
-  <figure>
+  <!-- <figure loading="lazy">
   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1892%253A20195" allowfullscreen></iframe>
   <figcaption>
     Instead of using the default radio buttons, style them in to something more interesting for the user
   </figcaption>
-  </figure>
+  </figure> -->
 
 <!-- end custom content -->
 

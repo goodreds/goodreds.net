@@ -4,40 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Examples</title>
-    <meta name="title" content="Examples — Examples of UI/UX principles." />
+    <meta
+      name="title"
+      content="Examples — Examples of UI/UX principles."
+    />
     <meta name="description" content="Examples of UI/UX principles." />
     <meta name="robots" content="follow, index" />
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://goodreds.net/examples/" />
+    <meta
+      property="og:url"
+      content="https://goodreds.net/examples/"
+    />
     <meta property="og:title" content="Examples" />
-    <meta property="og:description" content="Examples of UI/UX principles." /><meta property="og:image" content="https://res.cloudinary.com/kailoon/image/upload/v1612884943/kailoon.com/index.png" />
+    <meta property="og:description" content="Examples of UI/UX principles." /><meta
+      property="og:image"
+      content="https://res.cloudinary.com/goodreds/image/upload/v1638237918/goodreds.net/index.png"
+    />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://goodreds.net/examples/" />
+    <meta
+      property="twitter:url"
+      content="https://goodreds.net/examples/"
+    />
     <meta property="twitter:title" content="Examples" />
-    <meta property="twitter:description" content="Examples of UI/UX principles." /><meta property="twitter:image" content="https://res.cloudinary.com/kailoon/image/upload/v1612884943/kailoon.com/index.png" />
-    <style>
+    <meta
+      property="twitter:description"
+      content="Examples of UI/UX principles."
+    /><meta
+      property="twitter:image"
+      content="https://res.cloudinary.com/goodreds/image/upload/v1638237918/goodreds.net/index.png"
+    />
+    <style></style>
 
-    </style>
-
-    <link rel="canonical" href="https://goodreds.net/examples/" />
+    <link
+      rel="canonical"
+      href="https://goodreds.net/examples/"
+    />
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript>
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" type="text/css" />
     </noscript> -->
 
-    <link rel="stylesheet" href="/css/style.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link
+      rel="stylesheet"
+      href="/css/style.css"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
     <noscript>
-      <link href="/css/styles.css" rel="stylesheet" type="text/css" />
+      <link
+        href="/css/styles.css"
+        rel="stylesheet"
+        type="text/css"
+      />
     </noscript>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png" />
-    <link rel="icon" href="https://res.cloudinary.com/kailoon/image/upload/v1613141199/kailoon.com/favicon.svg" type="image/svg+xml" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="180x180"
+      href="https://res.cloudinary.com/goodreds/image/upload/v1638244848/goodreds.net/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/goodreds/image/upload/v1638238776/goodreds.net/favicon.ico"
+      type="image/svg+xml"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/favicon-16x16.png"
+    />
 
     <link rel="manifest" href="/site.webmanifest" />
 
@@ -52,30 +100,104 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "G-KBJXMGHQ44");
+      gtag('config', 'G-KBJXMGHQ44');
     </script>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
   </head>
 
-  <body class="h-full text-black antialiased bg-gray-50 dark:bg-black dark:text-gray-200 bg-no-repeat bg-top bg-contain">
-    <!-- skip to content -->
-    <a href="#content" class="w-full block text-center bg-gray-100 sr-only focus:not-sr-only"> Skip to Content </a>
+  <body class="bg-stone-50 dark:bg-stone-900">
+    <div
+      x-data="{'darkMode': false}"
+      x-init="
+         darkMode = JSON.parse(localStorage.getItem('darkMode'));
+         $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
+    >
+      <div :class="{'dark': darkMode === true}">
+        <!-- Theme toggle switch -->
+        <div class="h-auto py-2 bg-stone-50 dark:bg-stone-900 dark:text-stone-100">
+          <div class="flex items-center justify-end pr-5 space-x-2">
+              <!-- Light icon -->
+            <span class="text-sm text-yellow-400 dark:text-gray-500">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            </span>
+            <label
+              for="toggle"
+              class="flex items-center h-5 p-1 duration-300 ease-in-out bg-gray-300 rounded-full cursor-pointer w-9 dark:bg-gray-600"
+            >
+              <div
+                class="w-4 h-4 duration-300 ease-in-out transform bg-white rounded-full shadow-md toggle-dot dark:translate-x-3"
+              ></div>
+            </label>
+            <!-- Dark icon -->
+            <span class="text-sm text-gray-400 dark:text-yellow-400">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+            </span>
+            <input
+              id="toggle"
+              type="checkbox"
+              class="hidden"
+              :value="darkMode"
+              @change="darkMode = !darkMode"
+            />
+          </div>
+        </div>
+        <!-- Header - note that the header data is loaded from header.njk -->
+        <div
+          class="h-full text-stone-900 dark:text-stone-200 antialiased bg-stone-50 dark:bg-stone-900 bg-no-repeat bg-top bg-contain subpixel-antialiased"
+        >
+          <!-- class="bg-gradient-to-br from-slate-700 to-slate-900 -->
+          <!-- skip to content -->
+          <a
+            href="#content"
+            class="w-full block text-center bg-gray-100 sr-only focus:not-sr-only"
+          >
+            Skip to Content
+          </a>
 
-    
-      <div class="pb-32 lg:pb-64">
-  <header class="relative max-w-screen-xl mx-auto h-24 p-5 md:flex md:justify-between md:items-center">
-    <!-- logo -->
+           <div
+  class="pb-32 lg:pb-64"
+>
+  <header
+    class="relative max-w-screen-xl mx-auto h-24 p-5 md:flex md:justify-between md:items-center"
+  >
+    <!-- Logo -->
     <a href="/" title="back to homepage" class="logo">
-      <svg class="dark:text-white transform scale-75" width="52" height="100%" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2">
+      <svg
+        class="dark:text-white transform"
+        width="39"
+        height="100%"
+        viewBox="0 0 500 500"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xml:space="preserve"
+        xmlns:serif="http://www.serif.com/"
+        style="
+          fill-rule: evenodd;
+          clip-rule: evenodd;
+          stroke-linejoin: round;
+          stroke-miterlimit: 2;
+        "
+      >
         <g transform="matrix(5,0,0,5,0,0)">
           <path
             d="M62.4,28.9C63,29.9 64,30.4 65.4,30.4C66.6,30.4 67.6,30 68.4,29.2C69.2,28.4 69.6,27.4 69.6,26.2C69.6,24.4 68.8,22.9 67.3,21.8C65.8,20.6 63.9,20.1 61.6,20.1C58.8,20.1 56.6,20.8 55,22.2C53.4,23.6 52.6,25.5 52.5,28L49.7,27.9C45.4,27.9 41.8,29 38.9,31.3C36,33.6 34.5,36.4 34.5,39.8C34.5,42.1 35.4,44.2 37.1,46.2C34.9,47.2 33.4,48.2 32.6,49.3C31.7,50.4 31.3,51.9 31.3,53.8C31.3,57.4 33.2,59.6 37.1,60.4C32.2,61.9 29.8,64.6 29.8,68.4C29.8,72 31.6,74.8 35,77C38.4,79.2 43.2,80.2 49,80.2C55.5,80.2 60.6,79 64.4,76.5C68.2,74 70.1,70.6 70.1,66.3C70.1,62.9 68.9,60.3 66.3,58.5C63.8,56.7 60.2,55.8 55.6,55.8L51,55.7L50.2,55.7C47.4,55.7 45.7,55.6 44.9,55.5C42.6,55.1 41.4,54.1 41.4,52.5C41.4,51.8 41.8,51.2 42.5,50.6L42.9,50.7C45.5,51.8 48.1,52.4 50.7,52.4C55.4,52.4 59.2,51.3 62,49C64.9,46.7 66.3,43.7 66.3,40C66.3,35.1 64,31.8 59.3,30.1C59.2,30 59.2,29.7 59.2,29.4C59.2,28 59.7,27.3 60.7,27.3C61.1,27.3 61.5,27.5 61.7,27.8L62.4,28.9ZM50,0C77.6,0 100,22.4 100,50C100,77.6 77.6,100 50,100C22.4,100 0,77.6 0,50C0,22.4 22.4,0 50,0Z"
             style="fill: rgb(220, 38, 38); fill-rule: nonzero"
           />
-          <path d="M53.8,36.7C54.7,37.6 55.1,38.7 55.1,40.1C55.1,41.4 54.6,42.5 53.8,43.4C52.9,44.3 51.8,44.8 50.4,44.8C49,44.8 47.9,44.3 47,43.4C46.1,42.5 45.7,41.3 45.7,40C45.7,38.6 46.2,37.5 47,36.6C47.9,35.7 49,35.3 50.4,35.3C51.8,35.3 52.9,35.7 53.8,36.7Z" style="fill: rgb(220, 38, 38); fill-rule: nonzero" />
-          <path d="M52.9,64.1C56.7,64.1 58.5,65.1 58.5,67.2C58.5,69.8 55.6,71 49.9,71C44.2,71 41.4,69.7 41.4,67.2C41.4,65.8 42.5,64.7 44.7,63.9C46.4,64.1 47.9,64.2 49.1,64.2L51.1,64.2C52.1,64.1 52.7,64.1 52.9,64.1Z" style="fill: rgb(220, 38, 38); fill-rule: nonzero" />
+          <path
+            d="M53.8,36.7C54.7,37.6 55.1,38.7 55.1,40.1C55.1,41.4 54.6,42.5 53.8,43.4C52.9,44.3 51.8,44.8 50.4,44.8C49,44.8 47.9,44.3 47,43.4C46.1,42.5 45.7,41.3 45.7,40C45.7,38.6 46.2,37.5 47,36.6C47.9,35.7 49,35.3 50.4,35.3C51.8,35.3 52.9,35.7 53.8,36.7Z"
+            style="fill: rgb(220, 38, 38); fill-rule: nonzero"
+          />
+          <path
+            d="M52.9,64.1C56.7,64.1 58.5,65.1 58.5,67.2C58.5,69.8 55.6,71 49.9,71C44.2,71 41.4,69.7 41.4,67.2C41.4,65.8 42.5,64.7 44.7,63.9C46.4,64.1 47.9,64.2 49.1,64.2L51.1,64.2C52.1,64.1 52.7,64.1 52.9,64.1Z"
+            style="fill: rgb(220, 38, 38); fill-rule: nonzero"
+          />
         </g>
       </svg>
       <!-- <svg class="dark:text-white transform scale-75" width="52" height="52" xmlns="http://www.w3.org/2000/svg" fill="currentColor" xmlns:v="https://vecta.io/nano">
@@ -83,39 +205,68 @@
         <path d="M13 39L0 52V13L13 0V39Z" />
       </svg> -->
     </a>
+    <!-- Navigation -->
     <nav class="hidden md:block py-1">
       
-      <ul class="text-right">
+      <ul class="text-right text-lg">
         <li class="inline-block mr-5">
-          <a href="/about/" class="font-bold transition-colors dark:hover:text-yellow-200 hover:text-black dark:text-white text-gray-700 ">about.</a>
+          <a
+            href="/about/"
+            class="font-normal tracking-wide transition-colors dark:hover:text-yellow-400 hover:text-fuchsia-600
+            
+                dark:text-stone-200
+                text-stone-700
+            "
+            >about</a
+          >
         </li>
         <li class="inline-block mr-5">
-          <a href="/examples/" class="font-bold transition-colors dark:hover:text-yellow-200 hover:text-black  dark:text-yellow-200 text-black ">examples.</a>
+          <a
+            href="/examples/"
+            class="font-normal tracking-wide transition-colors dark:hover:text-yellow-400 hover:text-fuchsia-600
+            
+                dark:text-yellow-200
+                text-stone-900
+              "
+            >examples</a
+          >
         </li>
         <li class="inline-block mr-5">
-          <a href="/posts/" class="font-bold transition-colors dark:hover:text-yellow-200 hover:text-black dark:text-white text-gray-700 ">journal.</a>
+          <a
+            href="/posts/"
+            class="font-normal tracking-wide transition-colors dark:hover:text-yellow-400 hover:text-fuchsia-600
+            
+                dark:text-stone-200
+                text-stone-700
+            "
+            >posts</a
+          >
         </li>
         <li class="inline-block">
-          <a href="mailto:goodreds@gmail.com?subject=Request from goodreds.net&amp;body=Be sure to share as much info as you can on what you&#39;re trying to achieve and what sort of budget you have in place." title="get in touch" target="_blank" rel="noreferrer" class="text-gray-800 dark:text-yellow-300 py-2 px-5 rounded-full font-bold border-2 border-gray-900 dark:border-yellow-100 border-opacity-20 transition-colors hover:border-opacity-100"><span>Get in touch</span> </a>
+          <a
+            href="mailto:goodreds@gmail.com?subject=Request from goodreds.net&amp;body=Be sure to share as much info as you can on what you&#39;re trying to achieve and what sort of budget you have in place."
+            title="get in touch"
+            target="_blank"
+            rel="noreferrer"
+            class="text-gray-800 dark:bg-yellow-300 dark:text-yellow-600 py-2 px-5 rounded-full font-bold border-2 border-gray-900 dark:border-yellow-500 border-opacity-20 transition-colors hover:border-opacity-100"
+            ><span>Contact</span>
+          </a>
         </li>
       </ul>
     </nav>
   </header>
 </div>
+  
 
-    
-
-    
-
-    <main id="content" role="main">
-      <section id="post-head" class="px-5 max-w-screen-xl mx-auto lg:-mt-36">
+          <main id="content" role="main">
+            <section id="post-head" class="px-5 max-w-screen-xl mx-auto lg:-mt-36">
   
   
     
     <div class="grid grid-cols-12 gap-5 mb-6">
       <div class="col-start-1 col-end-12 lg:col-end-8 pt-10">
-        <h1 class="text-5xl md:text-5xl md:leading-tight tracking-tighter font-bold text-gray-800 dark:text-white">Examples</h1>
-        <P class="mt-6 text-lg font-normal dark:text-gray-300">This area contains the examples that demonstrate some of the UI/UX principles covered elsewhere on the site.</p>
+        <h1 class="text-5xl md:text-5xl md:leading-tight tracking-tighter font-bold text-gray-800 dark:text-white">Getting the basics right</h1>
+        <P class="mt-6 text-lg font-normal dark:text-gray-300">Some of the UI/UX principles that are going to help you today.</p>
       </div>
     </div>
   
@@ -133,7 +284,7 @@
     title="view example"
     class="block md:transform md:hover:-translate-y-2 md:transition-transform"
   >
-  <img class="" loading="lazy" src="https://res.cloudinary.com/goodreds/image/upload/q_auto,f_auto,w_400/flickevents-featured.webp" srcset="https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_400/kailoon.com/flickevents-featured.webp 400w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_600/kailoon.com/flickevents-featured.webp 600w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_768/kailoon.com/flickevents-featured.webp 768w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_820/kailoon.com/flickevents-featured.webp 820w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_1240/kailoon.com/flickevents-featured.webp 1240w" alt="Forms" width="400" height="300" sizes="100vw">
+  <img class="" loading="lazy" src="https://res.cloudinary.com/goodreds/image/upload/q_auto,f_auto,w_400/form_field_variants.webp" srcset="https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_400/goodreds.net/form_field_variants.webp 400w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_600/goodreds.net/form_field_variants.webp 600w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_768/goodreds.net/form_field_variants.webp 768w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_820/goodreds.net/form_field_variants.webp 820w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_1240/goodreds.net/form_field_variants.webp 1240w" alt="Forms" width="400" height="300" sizes="100vw">
   <div class="hidden md:block mt-2 pr-10">
     <span class="font-bold">Forms</span>
     <span class="text-gray-700 dark:text-gray-300">&mdash; Forms allow the users to send information back to the server, and by extension, you as the site owner. It is imperative to understand how to make forms as easy as possible for the user.</span>
@@ -146,10 +297,23 @@
     title="view example"
     class="block md:transform md:hover:-translate-y-2 md:transition-transform"
   >
-  <img class="" loading="lazy" src="https://res.cloudinary.com/goodreds/image/upload/q_auto,f_auto,w_400/99-featured.webp" srcset="https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_400/kailoon.com/99-featured.webp 400w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_600/kailoon.com/99-featured.webp 600w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_768/kailoon.com/99-featured.webp 768w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_820/kailoon.com/99-featured.webp 820w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_1240/kailoon.com/99-featured.webp 1240w" alt="Templates" width="400" height="300" sizes="100vw">
+  <img class="" loading="lazy" src="https://res.cloudinary.com/goodreds/image/upload/q_auto,f_auto,w_400/generic_placeholder.webp" srcset="https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_400/goodreds.net/generic_placeholder.webp 400w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_600/goodreds.net/generic_placeholder.webp 600w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_768/goodreds.net/generic_placeholder.webp 768w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_820/goodreds.net/generic_placeholder.webp 820w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_1240/goodreds.net/generic_placeholder.webp 1240w" alt="Templates" width="400" height="300" sizes="100vw">
   <div class="hidden md:block mt-2 pr-10">
     <span class="font-bold">Templates</span>
     <span class="text-gray-700 dark:text-gray-300">&mdash; Figma templates for the main social media netwrok accounts.</span>
+  </div>
+  </a>
+
+
+  <a
+    href="/examples/colours/"
+    title="view example"
+    class="block md:transform md:hover:-translate-y-2 md:transition-transform"
+  >
+  <img class="" loading="lazy" src="https://res.cloudinary.com/goodreds/image/upload/q_auto,f_auto,w_400/colour_swatches.webp" srcset="https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_400/goodreds.net/colour_swatches.webp 400w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_600/goodreds.net/colour_swatches.webp 600w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_768/goodreds.net/colour_swatches.webp 768w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_820/goodreds.net/colour_swatches.webp 820w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_1240/goodreds.net/colour_swatches.webp 1240w" alt="Colours" width="400" height="300" sizes="100vw">
+  <div class="hidden md:block mt-2 pr-10">
+    <span class="font-bold">Colours</span>
+    <span class="text-gray-700 dark:text-gray-300">&mdash; Using colours effectively will allow your users to quickly draw conclusions of what is more- or less-important at a glance.</span>
   </div>
   </a>
 
@@ -159,7 +323,7 @@
     title="view example"
     class="block md:transform md:hover:-translate-y-2 md:transition-transform"
   >
-  <img class="" loading="lazy" src="https://res.cloudinary.com/goodreds/image/upload/q_auto,f_auto,w_400/99-featured.webp" srcset="https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_400/kailoon.com/99-featured.webp 400w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_600/kailoon.com/99-featured.webp 600w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_768/kailoon.com/99-featured.webp 768w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_820/kailoon.com/99-featured.webp 820w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_1240/kailoon.com/99-featured.webp 1240w" alt="Buttons" width="400" height="300" sizes="100vw">
+  <img class="" loading="lazy" src="https://res.cloudinary.com/goodreds/image/upload/q_auto,f_auto,w_400/core_buttons_container.webp" srcset="https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_400/goodreds.net/core_buttons_container.webp 400w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_600/goodreds.net/core_buttons_container.webp 600w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_768/goodreds.net/core_buttons_container.webp 768w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_820/goodreds.net/core_buttons_container.webp 820w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_1240/goodreds.net/core_buttons_container.webp 1240w" alt="Buttons" width="400" height="300" sizes="100vw">
   <div class="hidden md:block mt-2 pr-10">
     <span class="font-bold">Buttons</span>
     <span class="text-gray-700 dark:text-gray-300">&mdash; Buttons are the main currency on the web and as such is important to get them right. At their simplest level they can be clicked to carry out actions on behalf of the user. The first point is to ensure that the button description, in the form of the text on it, reflects the action that the user can expect to occur once clicked.</span>
@@ -172,7 +336,7 @@
     title="view example"
     class="block md:transform md:hover:-translate-y-2 md:transition-transform"
   >
-  <img class="" loading="lazy" src="https://res.cloudinary.com/goodreds/image/upload/q_auto,f_auto,w_400/envato-featured.webp" srcset="https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_400/kailoon.com/envato-featured.webp 400w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_600/kailoon.com/envato-featured.webp 600w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_768/kailoon.com/envato-featured.webp 768w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_820/kailoon.com/envato-featured.webp 820w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_1240/kailoon.com/envato-featured.webp 1240w" alt="Cards" width="400" height="300" sizes="100vw">
+  <img class="" loading="lazy" src="https://res.cloudinary.com/goodreds/image/upload/q_auto,f_auto,w_400/cards.webp" srcset="https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_400/goodreds.net/cards.webp 400w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_600/goodreds.net/cards.webp 600w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_768/goodreds.net/cards.webp 768w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_820/goodreds.net/cards.webp 820w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_1240/goodreds.net/cards.webp 1240w" alt="Cards" width="400" height="300" sizes="100vw">
   <div class="hidden md:block mt-2 pr-10">
     <span class="font-bold">Cards</span>
     <span class="text-gray-700 dark:text-gray-300">&mdash; One of the largest digital marketplaces in the world from Envato.</span>
@@ -185,7 +349,7 @@
     title="view example"
     class="block md:transform md:hover:-translate-y-2 md:transition-transform"
   >
-  <img class="" loading="lazy" src="https://res.cloudinary.com/goodreds/image/upload/q_auto,f_auto,w_400/tinder-featured.webp" srcset="https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_400/kailoon.com/tinder-featured.webp 400w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_600/kailoon.com/tinder-featured.webp 600w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_768/kailoon.com/tinder-featured.webp 768w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_820/kailoon.com/tinder-featured.webp 820w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_1240/kailoon.com/tinder-featured.webp 1240w" alt="Templates for common tasks" width="400" height="300" sizes="100vw">
+  <img class="" loading="lazy" src="https://res.cloudinary.com/goodreds/image/upload/q_auto,f_auto,w_400/generic_placeholder.webp" srcset="https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_400/goodreds.net/generic_placeholder.webp 400w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_600/goodreds.net/generic_placeholder.webp 600w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_768/goodreds.net/generic_placeholder.webp 768w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_820/goodreds.net/generic_placeholder.webp 820w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_1240/goodreds.net/generic_placeholder.webp 1240w" alt="Templates for common tasks" width="400" height="300" sizes="100vw">
   <div class="hidden md:block mt-2 pr-10">
     <span class="font-bold">Templates for common tasks</span>
     <span class="text-gray-700 dark:text-gray-300">&mdash; Tinder ( previously Tinder Lab ) is a software development company based in Singapore, it is a subsidiary company for any cool side projects.</span>
@@ -198,7 +362,7 @@
     title="view example"
     class="block md:transform md:hover:-translate-y-2 md:transition-transform"
   >
-  <img class="" loading="lazy" src="https://res.cloudinary.com/goodreds/image/upload/q_auto,f_auto,w_400/qbasis-featured.webp" srcset="https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_400/kailoon.com/qbasis-featured.webp 400w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_600/kailoon.com/qbasis-featured.webp 600w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_768/kailoon.com/qbasis-featured.webp 768w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_820/kailoon.com/qbasis-featured.webp 820w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_1240/kailoon.com/qbasis-featured.webp 1240w" alt="Landing pages" width="400" height="300" sizes="100vw">
+  <img class="" loading="lazy" src="https://res.cloudinary.com/goodreds/image/upload/q_auto,f_auto,w_400/generic_placeholder.webp" srcset="https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_400/goodreds.net/generic_placeholder.webp 400w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_600/goodreds.net/generic_placeholder.webp 600w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_768/goodreds.net/generic_placeholder.webp 768w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_820/goodreds.net/generic_placeholder.webp 820w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_1240/goodreds.net/generic_placeholder.webp 1240w" alt="Landing pages" width="400" height="300" sizes="100vw">
   <div class="hidden md:block mt-2 pr-10">
     <span class="font-bold">Landing pages</span>
     <span class="text-gray-700 dark:text-gray-300">&mdash; Warehouse Inventory Management WMS and CRM Software.</span>
@@ -211,7 +375,7 @@
     title="view example"
     class="block md:transform md:hover:-translate-y-2 md:transition-transform"
   >
-  <img class="" loading="lazy" src="https://res.cloudinary.com/goodreds/image/upload/q_auto,f_auto,w_400/evercondo-featured.webp" srcset="https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_400/kailoon.com/evercondo-featured.webp 400w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_600/kailoon.com/evercondo-featured.webp 600w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_768/kailoon.com/evercondo-featured.webp 768w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_820/kailoon.com/evercondo-featured.webp 820w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_1240/kailoon.com/evercondo-featured.webp 1240w" alt="Fit & finish and the little professional touches" width="400" height="300" sizes="100vw">
+  <img class="" loading="lazy" src="https://res.cloudinary.com/goodreds/image/upload/q_auto,f_auto,w_400/generic_placeholder.webp" srcset="https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_400/goodreds.net/generic_placeholder.webp 400w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_600/goodreds.net/generic_placeholder.webp 600w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_768/goodreds.net/generic_placeholder.webp 768w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_820/goodreds.net/generic_placeholder.webp 820w, https://res.cloudinary.com/goodreds/image/upload/dpr_auto,q_auto,w_1240/goodreds.net/generic_placeholder.webp 1240w" alt="Fit & finish and the little professional touches" width="400" height="300" sizes="100vw">
   <div class="hidden md:block mt-2 pr-10">
     <span class="font-bold">Fit &amp; finish and the little professional touches</span>
     <span class="text-gray-700 dark:text-gray-300">&mdash; Evercondo is a platform that allows condominium and high-rise based property managers and owners to access management tasks.</span>
@@ -224,10 +388,9 @@
   
 </section>
 
-    </main>
+          </main>
 
-    
-      <div class="relative max-w-screen-md mx-auto py-32 md:py-48 md:leading-tight text-center font-bold tracking-tighter text-3xl md:text-5xl px-10">
+           <div class="relative max-w-screen-md mx-auto py-32 md:py-48 md:leading-tight text-center font-bold tracking-tighter text-3xl md:text-5xl px-10">
   <span class="block">⚡</span>
   If you would like to find out more <br>about how to improve your site<br> then choose a package today to get started.
   <div>
@@ -248,7 +411,7 @@
 <!-- footer start -->
 <footer id="footer" class="md:pt-6 md:pb-16 border-t border-gray-200 dark:border-gray-800">
   <div class="text-center md:text-left max-w-screen-xl m-auto sm:flex sm:justify-between sm:items-center text-sm pb-16 md:pb-0">
-    <p id="credit" class="p-5 text-gray-500 dark:text-gray-400">2021 © goodreds. This site was designed in 
+    <p id="credit" class="p-5 text-gray-500 dark:text-gray-400">2022 © goodreds. This site was designed in 
        
         <a href="https://www.figma.com/" class="text-black hover:text-purple-800 dark:text-gray-200 dark:hover:text-yellow-200" target="_blank" rel="noreferrer" title="follow me on social media" class="shadow md:transition-colors sm:hover:text-purple-800 md:hover:shadow-md">figma</a>,
         <a href="https://www.11ty.dev/" class="text-black hover:text-purple-800 dark:text-gray-200 dark:hover:text-yellow-200" target="_blank" rel="noreferrer" title="follow me on social media" class="shadow md:transition-colors sm:hover:text-purple-800 md:hover:shadow-md">11ty</a>,
@@ -259,7 +422,7 @@
     <p class="p-5">
       <span class="inline-flex space-x-5 leading-tight">
         
-          <a href="https://featuredImage.com/goodreds" target="_blank" rel="noreferrer" class="font-bold text-black hover:text-purple-800 dark:text-gray-200 dark:hover:text-yellow-200" target="_blank" rel="noreferrer" title="follow me on social">featuredImage.</a>
+          <a href="https://dribbble.com/goodreds" target="_blank" rel="noreferrer" class="font-bold text-black hover:text-purple-800 dark:text-gray-200 dark:hover:text-yellow-200" target="_blank" rel="noreferrer" title="follow me on social">dribbble.</a>
         
           <a href="https://twitter.com/goodreds" target="_blank" rel="noreferrer" class="font-bold text-black hover:text-purple-800 dark:text-gray-200 dark:hover:text-yellow-200" target="_blank" rel="noreferrer" title="follow me on social">twitter.</a>
         
@@ -276,22 +439,22 @@
       
           <a
           href="/about/"
-          class="text-gray-300 py-4 dark:text-purple-300
+          class="text-stone-300 py-4 dark:text-purple-300
           
           "
-          >about.</a>
+          >about</a>
           <a
           href="/examples/"
-          class="text-gray-300 py-4 dark:text-purple-300
+          class="text-stone-300 py-4 dark:text-purple-300
            text-white dark:text-white 
           "
-          >examples.</a>
+          >examples</a>
           <a
           href="/posts/"
-          class="text-gray-300 py-4 dark:text-purple-300
+          class="text-stone-300 py-4 dark:text-purple-300
           
           "
-          >journal.</a>
+          >posts</a>
         <a
           href="mailto:goodreds@gmail.com?subject=Request from goodreds.net&amp;body=Be sure to share as much info as you can on what you&#39;re trying to achieve and what sort of budget you have in place."
           title="get in touch"
@@ -304,19 +467,21 @@
   </div>
 </footer>
 <!-- footer end -->
+ 
 
-    
-
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", (user) => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
-    </script>
+          <script>
+            if (window.netlifyIdentity) {
+              window.netlifyIdentity.on('init', (user) => {
+                if (!user) {
+                  window.netlifyIdentity.on('login', () => {
+                    document.location.href = '/admin/';
+                  });
+                }
+              });
+            }
+          </script>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

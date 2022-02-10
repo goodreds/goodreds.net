@@ -48,7 +48,7 @@ eleventyConfig.setLibrary('md', markdownLibrary)
 5. score 4 x 100 in Google lighthouse.
 6. CSSnano (minify) ready.
 
-![](https://res.cloudinary.com/kailoon/image/upload/v1613408502/kailoon.com/Screenshot_on_2021-02-14_at_19-06-24.png)
+![](https://res.cloudinary.com/goodreds/image/upload/v1638237918/goodreds.net/Screenshot_on_2021-02-14_at_19-06-24.png)
 
 ### Installation
 

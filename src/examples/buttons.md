@@ -3,16 +3,16 @@ metaTitle: Buttons
 metaDescription: Buttons are the most important way to interaction between your users and your app or product.
 title: Buttons
 description: Buttons are the main currency on the web and as such is important to get them right. At their simplest level they can be clicked to carry out actions on behalf of the user. The first point is to ensure that the button description, in the form of the text on it, reflects the action that the user can expect to occur once clicked.
-testimonial: Making sure that you get buttons right is the single most important aspect of effectively reaching out to your users, and hearing what they want back.
+excerptText: Getting your buttons right is the single most important aspect of effectively reaching out to your users, and hearing back from them what they want from you.
 subjectName: Buttons
 subjectRank: Essentials
 projectUrl: https://www.Buttons/
-featuredImage: https://featuredImage.com/kailoon/projects/304610-99-co
-featuredImg: 99-featured
-bgColor: D5E7F3
+dribbble: https://dribbble.com/kailoon/projects/304610-99-co
+featuredImg: core_buttons_container
+tailwindAccentColour: yellow
 featured: true
 span: true
-tasks: UI
+tasks: Interaction
 year: 2021
 date: 2021-10-27
 ---
@@ -31,87 +31,69 @@ The one exception is text link buttons which lack any decoration beyond, usually
 
 # Which styles of button to use and where
 [Which style of buttons to use for which button types](https://www.notion.so/adc27e617bbe40b18e51151623e097ab)
+<figure>
+  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="400" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D5555%253A67368" allowfullscreen></iframe>
+</figure>
 
 # Elements of a button
 Buttons typically consist of:
-
-- Clickable button element
-- Label
-- Icon (Optional)
-- Drop shadow (optional)
-
 <figure>
-  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1648%253A18277" allowfullscreen></iframe>
-<figcaption>
-  Anatomy of a typical button
-</figcaption>
+    <img src="https://res.cloudinary.com/goodreds/image/upload/v1644291970/goodreds.net/anatomy_of_a_button.png"
+         alt="Anatomy of a button">
+    <figcaption class="imgCaption">Anatomy of a button</figcaption>
 </figure>
 
-# Internal spacing
+# Spacing
 <figure>
-  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1648%253A18279" allowfullscreen></iframe>
-<figcaption>
-  Internal and external padding proportions
-</figcaption>
+  <img src="https://res.cloudinary.com/goodreds/image/upload/v1644292285/goodreds.net/button_spacing.png" alt="spacing">
+  <figcaption class="imgCaption">Internal and external spacing</figcaption>
 </figure>
 
-Inside the button you should use the correct internal spacing to generate a minimum height for the button of 54-60px. So if the base-size for you design (typically the font size) is 16px then that would equate to:
+<!-- Inside the button you should use the correct internal spacing to generate a minimum height for the button of 54-60px. So if the base-size for you design (typically the font size) is 16px then that would equate to:
 
 ```
-$(54px - 16px)/2 = 19px$
+(54px - 16px)/2 = 19px
 ```
 
 Using the 19px of vertical padding above and below the text label of the button gives a correct minimum height for the button of 54px:
 
 ```
-$16px + (19px * 2) = 54px$
+16px + (19px * 2) = 54px
 ```
 
 There is more leeway with the button width but a good rule for a balanced result is to aim for double the amount of the vertical internal padding applied as horizontal padding:
 
 ```
-$19px * 2 = 38px$
-```
+19px * 2 = 38px
+``` -->
 
-## Internal spacing
-Ensure that your buttons contain some internal padding to increase the clickable area. This makes the button easier to use. A minimum height for a button would be around 56-64px (44-48pt) so this is a good aim for the clickable area of the button.
+<!-- Ensure that your buttons contain some internal padding to increase the clickable area. This makes the button easier to use. A minimum height for a button would be around 56-64px (44-48pt) so this is a good aim for the clickable area of the button. -->
 
 As a rule of thumb aiming for (a minimum of) twice the horizontal-padding than the vertical-padding will give you nicely proportioned buttons.
 
-
 # Prominent buttons
+
 Use Primary or call-to-action buttons for the most prominent actions. If the button is going to finalise a process, including charging a user for a service, then use some kind of accompanying text to let the user know what is about to occur when the button is clicked.
 
 <figure>
-  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1648%253A18717" allowfullscreen></iframe>
-<figcaption>
-  Prominence for buttons
-</figcaption>
+  <img src="https://res.cloudinary.com/goodreds/image/upload/v1644292744/goodreds.net/prominent_buttons.png" alt="Prominent buttons">
+  <figcaption class="imgCaption">Prominent buttons</figcaption>
 </figure>
 
 # Button states
 You must design a full range of states for each button for the purposes of giving feedback to your users as to which parts of the user interface can be interacted with, which parts are currently active, and which parts may be off-limits or disabled currently. The states to include are as follows:
 
-- Default (or initial) state
-- Hover
-- Clicked
-- Disabled
-
 <figure>
-  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1663%253A19010" allowfullscreen></iframe>
-<figcaption>
-  Button states
-</figcaption>
+  <img src="https://res.cloudinary.com/goodreds/image/upload/v1644293306/goodreds.net/button_states_graphic.png" alt="Button states graphic">
+  <figcaption class="imgCaption">Button states graphic</figcaption>
 </figure>
 
 # Paired buttons
 Put the actionable part on the right-hand side for English or other left-to-right direction languages. Reverse this for right-to-left languages such as Arabic, where the action button should be placed to the left-hand side.
 
 <figure>
-  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1663%253A19061" allowfullscreen></iframe>
-<figcaption>
-  Paired buttons
-</figcaption>
+  <img src="https://res.cloudinary.com/goodreds/image/upload/v1644294763/goodreds.net/Button_ordering_graphic.png" alt="Button ordering graphic">
+  <figcaption class="imgCaption">Button ordering graphic</figcaption>
 </figure>
 
 # Corner radius
@@ -122,27 +104,28 @@ Sharp buttons have a sharp, professional feel and are typically more elegant tha
 Rounded buttons feel 'nicer' to the user - the eye follows the curves of the corners more readily than sharp button corners.
 
 <figure>
-  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1663%253A19113" allowfullscreen></iframe>
-<figcaption>
-  Corner radius
-</figcaption>
+  <img src="https://res.cloudinary.com/goodreds/image/upload/v1644295187/goodreds.net/corner_radius.png" alt="Corner radius">
+  <figcaption class="imgCaption">Corner radius</figcaption>
 </figure>
 
 Whichever corner radius you decide upon, you must ensure that it remains consistent across your whole site, and this means keeping a close eye on diagonal spacing between the button and the edge of neighbouring elements.
 
 # Button text size
-<figure>
-  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLGqH2iAEDqig26lZ8LBGrB%2FExample-Design-System%3Fnode-id%3D1663%253A19153" allowfullscreen></iframe>
-<figcaption>
-  Button text sizing
-</figcaption>
-</figure>
 
 No smaller than 20px (16pt) is best, but you are free to make your button text match your base font size (often 16px or 12pt) but be careful about going any smaller than 13px (10pt) if you want the user to click it.
+
+<figure>
+  <img src="https://res.cloudinary.com/goodreds/image/upload/v1644295436/goodreds.net/button_text_sizing.png" alt="Button text size">
+  <figcaption class="imgCaption">Button text size</figcaption>
+</figure>
 
 # Button shadows
 A small, subtle shadow on a **filled** button can help it stand out more effectively for the user, giving them some indication that the element is clickable.
 
+<figure>
+  <img src="https://res.cloudinary.com/goodreds/image/upload/v1644296128/goodreds.net/button_shadows.png" alt="Button shadows">
+  <figcaption class="imgCaption">Button shadows</figcaption>
+</figure>
 
 # Button widths
 Adding around a minimum 40px (32pt) of horizontal padding outside the text / text+icon on a button gives a nice target for your users to hit. If you need to align to a grid then do so but do not go below the above rule of thumb. If you need to align a button with a form then by all means go larger too - full width buttons are acceptable if there is only one or two - e.g. 'Next step' in a multipage form.

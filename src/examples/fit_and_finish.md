@@ -3,12 +3,12 @@ metaTitle: Fit & finish and the little professional touches
 metaDescription: Evercondo is a platform that allows condominium and high-rise based property managers and owners to access management tasks.
 title: Fit & finish and the little professional touches
 description: Evercondo is a platform that allows condominium and high-rise based property managers and owners to access management tasks.
-testimonial:
+excerptText:
 subjectName:
 subjectRank:
 projectUrl: https://www.crunchbase.com/organization/evercondo
-featuredImage: https://featuredImage.com/kailoon/projects/282273-Evercondo-iOS-App
-featuredImg: evercondo-featured
+dribbble: https://dribbble.com/kailoon/projects/282273-Evercondo-iOS-App
+featuredImg: generic_placeholder
 bgColor: CEDCE8
 featured: false
 tasks: App Design

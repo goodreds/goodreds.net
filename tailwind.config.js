@@ -15,17 +15,32 @@ module.exports = {
 			safelist: [],
 		},
 	},
-	darkMode: 'media', // or 'media' or 'class'
+	darkMode: 'class', // or 'media' or 'class'
 	theme: {
-		// Specify which of the Tailwind default palette colors to import for use
+		// Specify which of the Tailwind default palette colors to import for use - Add new colours here
 		colors: {
-			gray: colors.blueGray,
-			purple: colors.purple,
+			slate: colors.slate,
+			gray: colors.gray,
+			zinc: colors.zinc,
+			neutral: colors.neutral,
+			stone: colors.stone,
+			red: colors.red,
 			orange: colors.orange,
-			rose: colors.rose,
-			blue: colors.blue,
-			green: colors.green,
+			amber: colors.amber,
 			yellow: colors.yellow,
+			lime: colors.lime,
+			green: colors.green,
+			emerald: colors.emerald,
+			teal: colors.teal,
+			cyan: colors.cyan,
+			sky: colors.sky,
+			blue: colors.blue,
+			indigo: colors.indigo,
+			violet: colors.violet,
+			purple: colors.purple,
+			fuchsia: colors.fuchsia,
+			pink: colors.pink,
+			rose: colors.rose,
 			white: colors.white,
 			black: colors.black,
 			current: 'currentColor',
@@ -56,7 +71,8 @@ module.exports = {
 				'Times New Roman',
 				'Times',
 				'serif'
-			]
+			],
+			caption: ['OpticianSans']
 		}
 	},
 	variants: {

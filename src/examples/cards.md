@@ -3,15 +3,15 @@ metaTitle: Cards
 metaDescription: Design the logo for all the marketplaces of Envato.
 title: Cards
 description: One of the largest digital marketplaces in the world from Envato.
-testimonial: I’ve been working with kailoon for over a decade. He has a great combination of creativity, reliability and industry knowledge. He’s also a good human being and I would happily recommend him to anyone who needs someone with a lot of industry expertise.
+excerptText: Cards are a mix of mini-pages and buttons. Get these right to help your users get around your app or site.
 subjectName: Collis
 subjectRank: co-founder of Envato
 projectUrl: https://themeforest.net/
-featuredImage:
-featuredImg: envato-featured
-bgColor: E8E8E8
-featured: true
-tasks: Logo Design
+dribbble:
+featuredImg: cards
+tailwindAccentColour: sky
+featured: true // featured decides whether or not a page appears on the landing page grid of items
+tasks: Infomation architecture
 year: 2011
 date: 2021-02-20
 ---

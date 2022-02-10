@@ -15,11 +15,11 @@
 		"name": "goodreds",
 		"email": "goodreds@gmail.com",
 		"url": "https://goodreds.net/",
-		"avatar": "https://res.cloudinary.com/goodreds/image/upload/c_scale,dpr_auto,q_auto,w_64/v1610896577/goodreds.net/avatar_ce8dgk.webp",
+		"avatar": "https://res.cloudinary.com/goodreds/image/upload/c_scale,dpr_auto,q_auto,w_64/v1638237045/goodreds.net/avatar_ce8dgk.webp",
 		"mailtolink": "mailto:goodreds@gmail.com?subject=Request from goodreds.net&body=Be sure to share as much info as you can on what you're trying to achieve and what sort of budget you have in place."
 	},
 	"socials": {
-		"featuredImage": "https://featuredImage.com/goodreds",
+		"dribbble": "https://dribbble.com/goodreds",
 		"twitter": "https://twitter.com/goodreds",
 		"linkedin": "https://linkedin.com/in/goodreds",
 		"github": "https://github.com/goodreds"

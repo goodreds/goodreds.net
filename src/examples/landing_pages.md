@@ -3,14 +3,14 @@ metaTitle: Landing pages
 metaDescription: Warehouse Inventory Management WMS and CRM Software.
 title: Landing pages
 description: Warehouse Inventory Management WMS and CRM Software.
-testimonial: Kailoon is talented and sharp. Paired with a keen design sense and patience when dealing with clients, he’s a trustable resource to work with when it comes to branding and UI/UX works. I’ve entrusted him with the branding works of my 2 companies and will continue to do so in the future.
+excerptText: Kailoon is talented and sharp. Paired with a keen design sense and patience when dealing with clients, he’s a trustable resource to work with when it comes to branding and UI/UX works. I’ve entrusted him with the branding works of my 2 companies and will continue to do so in the future.
 subjectName: Yao Quan
 subjectRank: Founder of Landing pages
 projectUrl: https://www.qbasistech.com/
-featuredImage: https://featuredImage.com/kailoon/projects/282263-Qbasis
-featuredImg: qbasis-featured
+dribbble: https://dribbble.com/kailoon/projects/282263-Qbasis
+featuredImg: generic_placeholder
 bgColor: E3F0D0
-featured: true
+featured: false
 tasks: Logo Design & Brand Identity
 year: 2015
 date: 2021-02-18

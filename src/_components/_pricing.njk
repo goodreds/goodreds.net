@@ -1,5 +1,5 @@
 <!-- pricing -->
-<section id="services" class="pb-12">
+<section id="pricing" class="pb-12 bg-stone-50 dark:bg-stone-900">
 <div class="max-w-screen-xl m-auto px-4">
   <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
     {% for item in data.pricing %}
@@ -9,9 +9,9 @@
           <p class="text-xl tracking-tight text-gray-700 dark:text-gray-500">{{ item.tagline }}</p>
         </div>
         {% else %}
-        <div class="max-w-5xl mx-auto mt-16 flex flex-col lg:flex-row justify-center lg:justify-around items-center xl:odd:scale-110 filter odd:brightness-110 dark:odd:brightness-125">
+        <div class="max-w-5xl mx-auto mt-4 flex flex-col lg:flex-row justify-center lg:justify-around items-center xl:odd:scale-110 filter odd:brightness-110 dark:odd:brightness-125">
           <!-- flex-1 ensures that the columns are equal height -->
-          <div class="border-0 border-gray-200 dark:border-gray-800 flex-1 bg-gray-100 dark:bg-gray-700  max-w-sm shadow-lg rounded-lg">
+          <div class="flex-1 bg-gray-50 dark:bg-gray-700  max-w-sm shadow-md rounded-md">
             <h3 class="rounded-t-lg bg-gray-300 dark:bg-gray-600 font-medium text-gray-900 dark:text-gray-300 border border-gray-100 dark:border-gray-600 text-sm text-center px-8 py-4 uppercase tracking-widest">{{ item.name }}</h3>
             <p class="block py-8 text-gray-800 dark:text-gray-400 text-base leading-snug text-center px-8">{{ item.description | safe }}</p>
             <div class="w-full px-8 my-8">
@@ -41,10 +41,10 @@
               </ul>
               <div class="px-8 my-8">
                 <button class="bg-blue-500 hover:bg-green-500 text-white hover:text-gray-700 text-sm w-full py-4 rounded-md">
-                  <div class="flex flex-row px-4 mx-auto font-bold">
-                    <p class="w-1/2 uppercase tracking-widest text-right">Order now</p>
+                  <div class="flex flex-row px-4 mx-auto font-normal text-xl">
+                    <p class="w-1/2 uppercase tracking-widest text-center font-bold">Order</p>
                     <p class="border-r px-2 opacity-50"></p>
-                    <p class="w-1/2 text-left pl-4 tracking-wide"><span class="line-through opacity-60 hover:text-rose-600 pr-2">${{ item.highprice }}</span>${{ item.price }}</p>
+                    <p class="w-1/2 text-left pl-4 tracking-wide "><span class="priceReduction line-through opacity-60 hover:text-rose-600 pr-2">${{ item.highprice }}</span>${{ item.price }}</p>
                   </div>
                 </button>
               </div>

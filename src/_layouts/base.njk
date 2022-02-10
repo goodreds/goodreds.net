@@ -4,50 +4,108 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ metaTitle | safe }}</title>
-    <meta name="title" content="{{ metaTitle | safe }} — {{ metaDescription | safe }}" />
+    <meta
+      name="title"
+      content="{{ metaTitle | safe }} — {{ metaDescription | safe }}"
+    />
     <meta name="description" content="{{ metaDescription | safe }}" />
     <meta name="robots" content="follow, index" />
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ page.url | url | absoluteUrl(metadata.url)}}" />
+    <meta
+      property="og:url"
+      content="{{ page.url | url | absoluteUrl(metadata.url)}}"
+    />
     <meta property="og:title" content="{{ metaTitle | safe }}" />
     <meta property="og:description" content="{{ metaDescription | safe }}" />
     {%- if featuredImg %}
-    <meta property="og:image" content="https://res.cloudinary.com/kailoon/image/upload/v1612884943/kailoon.com/{{ featuredImg }}.png" />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/goodreds/image/upload/v1638237918/goodreds.net/{{
+        featuredImg
+      }}.png"
+    />
     {%- else -%}
-    <meta property="og:image" content="https://res.cloudinary.com/kailoon/image/upload/v1612884943/kailoon.com/index.png" />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/goodreds/image/upload/v1638237918/goodreds.net/index.png"
+    />
     {%- endif %}
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="{{ page.url | url | absoluteUrl(metadata.url)}}" />
+    <meta
+      property="twitter:url"
+      content="{{ page.url | url | absoluteUrl(metadata.url)}}"
+    />
     <meta property="twitter:title" content="{{ metaTitle | safe }}" />
-    <meta property="twitter:description" content="{{ metaDescription | safe }}" />
+    <meta
+      property="twitter:description"
+      content="{{ metaDescription | safe }}"
+    />
     {%- if featuredImg %}
-    <meta property="twitter:image" content="https://res.cloudinary.com/kailoon/image/upload/v1612884943/kailoon.com/{{ featuredImg }}.png" />
+    <meta
+      property="twitter:image"
+      content="https://res.cloudinary.com/goodreds/image/upload/v1638237918/goodreds.net/{{
+        featuredImg
+      }}.png"
+    />
     {%- else -%}
-    <meta property="twitter:image" content="https://res.cloudinary.com/kailoon/image/upload/v1612884943/kailoon.com/index.png" />
+    <meta
+      property="twitter:image"
+      content="https://res.cloudinary.com/goodreds/image/upload/v1638237918/goodreds.net/index.png"
+    />
     {%- endif %}
-    <style>
+    <style></style>
 
-    </style>
-
-    <link rel="canonical" href="{{ page.url | url | absoluteUrl(metadata.url)}}" />
+    <link
+      rel="canonical"
+      href="{{ page.url | url | absoluteUrl(metadata.url)}}"
+    />
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript>
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" type="text/css" />
     </noscript> -->
 
-    <link rel="stylesheet" href="{{ '/css/style.css' | url }}" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link
+      rel="stylesheet"
+      href="{{ '/css/style.css' | url }}"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
     <noscript>
-      <link href="{{ '/css/styles.css' | url }}" rel="stylesheet" type="text/css" />
+      <link
+        href="{{ '/css/styles.css' | url }}"
+        rel="stylesheet"
+        type="text/css"
+      />
     </noscript>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png" />
-    <link rel="icon" href="https://res.cloudinary.com/kailoon/image/upload/v1613141199/kailoon.com/favicon.svg" type="image/svg+xml" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="180x180"
+      href="https://res.cloudinary.com/goodreds/image/upload/v1638244848/goodreds.net/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/goodreds/image/upload/v1638238776/goodreds.net/favicon.ico"
+      type="image/svg+xml"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/favicon-16x16.png"
+    />
 
     <link rel="manifest" href="{{ '/site.webmanifest' | url }}" />
 
@@ -62,45 +120,90 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "G-KBJXMGHQ44");
+      gtag('config', 'G-KBJXMGHQ44');
     </script>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
   </head>
 
-  <body class="h-full text-black antialiased bg-gray-50 dark:bg-black dark:text-gray-200 bg-no-repeat bg-top bg-contain">
-    <!-- skip to content -->
-    <a href="#content" class="w-full block text-center bg-gray-100 sr-only focus:not-sr-only"> Skip to Content </a>
+  <body class="bg-stone-50 dark:bg-stone-900">
+    <div
+      x-data="{'darkMode': false}"
+      x-init="
+         darkMode = JSON.parse(localStorage.getItem('darkMode'));
+         $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
+    >
+      <div :class="{'dark': darkMode === true}">
+        <!-- Theme toggle switch -->
+        <div class="h-auto py-2 bg-stone-50 dark:bg-stone-900 dark:text-stone-100">
+          <div class="flex items-center justify-end pr-5 space-x-2">
+              <!-- Light icon -->
+            <span class="text-sm text-yellow-400 dark:text-gray-500">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            </span>
+            <label
+              for="toggle"
+              class="flex items-center h-5 p-1 duration-300 ease-in-out bg-gray-300 rounded-full cursor-pointer w-9 dark:bg-gray-600"
+            >
+              <div
+                class="w-4 h-4 duration-300 ease-in-out transform bg-white rounded-full shadow-md toggle-dot dark:translate-x-3"
+              ></div>
+            </label>
+            <!-- Dark icon -->
+            <span class="text-sm text-gray-400 dark:text-yellow-400">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+            </span>
+            <input
+              id="toggle"
+              type="checkbox"
+              class="hidden"
+              :value="darkMode"
+              @change="darkMode = !darkMode"
+            />
+          </div>
+        </div>
+        <!-- Header - note that the header data is loaded from header.njk -->
+        <div
+          class="h-full text-stone-900 dark:text-stone-200 antialiased bg-stone-50 dark:bg-stone-900 bg-no-repeat bg-top bg-contain subpixel-antialiased"
+        >
+          <!-- class="bg-gradient-to-br from-slate-700 to-slate-900 -->
+          <!-- skip to content -->
+          <a
+            href="#content"
+            class="w-full block text-center bg-gray-100 sr-only focus:not-sr-only"
+          >
+            Skip to Content
+          </a>
 
-    {% block header %}
-      {% include "../_components/_header.njk" %}
-    {% endblock %}
+          {% block header %} {% include "../_components/_header.njk" %} {%
+          endblock %} {% if page.url==='/'%} {% block hero %} {% include
+          '../_components/_hero.njk' %} {% endblock hero %} {% endif %}
 
-    {% if page.url==='/'%}
-      {% block hero %}
-        {% include '../_components/_hero.njk' %}
-      {% endblock hero %}
-    {% endif %}
+          <main id="content" role="main">
+            {{ content | safe }}
+          </main>
 
-    <main id="content" role="main">
-      {{ content | safe }}
-    </main>
+          {% block footer %} {% include "../_components/_footer.njk" %} {%
+          endblock %}
 
-    {% block footer %}
-      {% include "../_components/_footer.njk" %}
-    {% endblock %}
-
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", (user) => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
-    </script>
+          <script>
+            if (window.netlifyIdentity) {
+              window.netlifyIdentity.on('init', (user) => {
+                if (!user) {
+                  window.netlifyIdentity.on('login', () => {
+                    document.location.href = '/admin/';
+                  });
+                }
+              });
+            }
+          </script>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
