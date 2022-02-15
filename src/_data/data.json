@@ -80,7 +80,22 @@
     {
       "name": "01. Essentials",
       "description": "Getting the following areas right gives a strong foundation to making positive qualitative changes.",
-      "tags": ["Buttons", "Cards", "Forms", "Inspiration", "Landing pages", "Professional touches", "Templates"]
+      "tags": ["Buttons", "Cards", "Forms", "Inspiration", "Landing pages", "Professional touches", "Templates"],
+      "slideImages": [
+        "https://res.cloudinary.com/goodreds/image/upload/v1644556290/goodreds.net/buttons_carousel/3d_anatomy.png",
+        "https://res.cloudinary.com/goodreds/image/upload/v1644556289/goodreds.net/buttons_carousel/3d_spacing.png",
+        "https://res.cloudinary.com/goodreds/image/upload/v1644556289/goodreds.net/buttons_carousel/3d_font_size.png",
+        "https://res.cloudinary.com/goodreds/image/upload/v1644556288/goodreds.net/buttons_carousel/3d_shadows.png",
+        "https://res.cloudinary.com/goodreds/image/upload/v1644556288/goodreds.net/buttons_carousel/3d_order_cta.png",
+        "https://res.cloudinary.com/goodreds/image/upload/v1644556288/goodreds.net/buttons_carousel/3d_corner_radius.png",
+        "https://res.cloudinary.com/goodreds/image/upload/v1644556288/goodreds.net/buttons_carousel/3d_states.png",
+        "https://res.cloudinary.com/goodreds/image/upload/v1644556287/goodreds.net/buttons_carousel/3d_order.png"
+      ],
+      "test2d": {
+        "basics": "https://res.cloudinary.com/goodreds/image/upload/v1644556290/goodreds.net/buttons_carousel/3d_anatomy.png",
+        "intermediate": "https://res.cloudinary.com/goodreds/image/upload/v1644556289/goodreds.net/buttons_carousel/3d_spacing.png"
+      }
+
     },
     {
       "name": "02. Deluxe",

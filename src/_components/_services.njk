@@ -1,21 +1,163 @@
 <!-- services -->
 <section id="services" class="pb-12 overflow-hidden relative bg-stone-50 dark:bg-stone-900">
-  <img
+<!-- service image - optional -->
+  <!-- <img
     class="opacity-5 absolute m-auto top-0 width-100 h-auto"
     src="https://res.cloudinary.com/goodreds/image/upload/v1644285775/goodreds.net/form_field_variants.png"
     alt=""
-  />
+  /> -->
   <div class="max-w-screen-xl m-auto px-5 relative">
     <!-- <figure>
-  <img class="" src="https://res.cloudinary.com/goodreds/image/upload/v1644285775/goodreds.net/form_field_variants.png" alt="Form field variants">
-  <figcaption class="imgCaption">Form field variants</figcaption>
-  </figure> -->
+            <img class="" src="https://res.cloudinary.com/goodreds/image/upload/v1644285775/goodreds.net/form_field_variants.png" alt="Form field variants">
+            <figcaption class="imgCaption">Form field variants</figcaption>
+         </figure> -->
+    <!-- TODO Possible colours required for each subject: tailwindAccentColour, tailwindMainColour, tailwindContrastColour -->
+    <!-- box with height and colour -->
+    <div class="bg-stone-300 h-96 relative">
+      <!-- icon and title text -->
+      <h1 class="flex text-5xl absolute mt-32 mx-48 text-stone-500">
+          <svg class="w-12 fill-stone-500 mr-4" id="Layer_2" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g><path d="M16,31.5c8.54999,0,15.5-6.95001,15.5-15.5S24.54999,0.5,16,0.5S0.5,7.45001,0.5,16S7.45001,31.5,16,31.5z M9,10.5   C9,9.66998,9.66998,9,10.5,9h11c0.83002,0,1.5,0.66998,1.5,1.5v11c0,0.82996-0.66998,1.5-1.5,1.5h-11C9.66998,23,9,22.32996,9,21.5   V10.5z"/><rect height="8" width="8" x="12" y="12"/></g>
+          </svg>
+          item.name
+      </h1>
+
+      <div class="flex gap-4">
+        <div class="w-3/5 ml-8 mt-48">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt illo consequatur soluta magnam odio, repellendus culpa consequuntur nam. Porro tempore officiis, quibusdam nisi libero iure? Culpa maxime quidem dicta.</p>
+        </div>
+        <div class="w-2/5 mr-8 mt-48 text-sm">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eius placeat officia dolorem quod cum cupiditate, accusamus illo velit quisquam dolorum nulla nisi quae enim quos vero doloremque assumenda fugiat.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- {% set cloudinaryUrl = 'https://res.cloudinary.com/goodreds/image/upload/' %} -->
+
+
+    {% for item in data.services %}
+      <!--  item.name should appear here for each of the options -->
+      <!-- {{ item.name }} -->
+      <!-- Only create the image elements if the image array has something in it (by checking the array length ) -->
+      {% if item.slideImages.length > 0 %}
+        {% for imgURL in item.slideImages %}
+          <!-- <p class="text-xs text-stone-700"><img src="{{ imgURL }}" alt="">{{ imgURL }}</p> -->
+        {% endfor %}
+      {% else %}
+          <!-- <p class="text-xs text-stone-500">There are no images in the gallery for the <span class="underline">{{ item.name }}</span> option yet</p> -->
+      {% endif %}
+    {% endfor %}
+
+    <hr>
+    <!-- {% set animals = ['cat 🐱', 'dog 🐶', 'lion 🦁'] %}
+    {% set domesticAnimals = [] %}
+    {% for animal in animals %}
+      {% if animal !== 'lion' %}
+        {% set domesticAnimals = (domesticAnimals.push(animal), domesticAnimals) %}
+      {% endif %}
+    {% endfor %}
+
+    {% for item in data.services %}
+      {% if item.name === '01. Essentials' %}
+        {% set slidesFromJSON = [] %}
+        {% for slideUrl in item.slideImages %}
+          {% set slidesFromJSON = (slidesFromJSON.push(slideUrl), slidesFromJSON) %}
+          <p class="text-stone-700 dark:text-stone-200">{{ loop.index }}: {{ slidesFromJSON[loop.index0] }}</p>
+        {% endfor %}
+      {% else %}
+        <p class="text-stone-3
+        00">There is nothing happening here</p>
+      {% endif %}
+    {% endfor %} -->
+    <hr>
+    <!-- {% for i in range(0,2) %}
+      <p>{{ i }}</p>
+    {% endfor %}
+    {% set fruits = ['Apple', 'Banana'] %}
+    <p>{{ fruits }}</p> -->
+
+    <!-- <div x-data="{slideImages: [
+        {
+          url: 'https://res.cloudinary.com/goodreds/image/upload/v1644556290/goodreds.net/buttons_carousel/3d_anatomy.png',
+          id: 1 },
+        { url: 'https://res.cloudinary.com/goodreds/image/upload/v1644556289/goodreds.net/buttons_carousel/3d_spacing.png',
+          id: 2 },
+        { url: 'https://res.cloudinary.com/goodreds/image/upload/v1644556289/goodreds.net/buttons_carousel/3d_font_size.png',
+          id: 3 },
+        { url: 'https://res.cloudinary.com/goodreds/image/upload/v1644556289/goodreds.net/buttons_carousel/3d_shadows.png',
+          id: 4 }
+      ]}">
+      <template x-for="slideImage in slideImages">
+        <p>Slide image: <span x-text="slideImage.url"></span></p>
+        <img x-bind:src="slideImage.url" alt=""/>
+      </template>
+    </div> -->
+
+    <div id="carousel">
+      <div class="bg-sky-50 h-1/5 flex flex-col justify-center items-center">
+        <div class="max-w-4xl mx-auto mb-12 relative">
+          <!-- <div x-data="{ activeSlide: 1, slides: [1,2,3,4,5,6,7,8,9] }"> -->
+          <div x-data="{ activeSlide: 'https://res.cloudinary.com/goodreds/image/upload/v1644556290/goodreds.net/buttons_carousel/3d_anatomy.png', slides: [
+            'https://res.cloudinary.com/goodreds/image/upload/v1644556290/goodreds.net/buttons_carousel/3d_anatomy.png',
+            'https://res.cloudinary.com/goodreds/image/upload/v1644556290/goodreds.net/buttons_carousel/3d_spacing.png',
+            'https://res.cloudinary.com/goodreds/image/upload/v1644556290/goodreds.net/buttons_carousel/3d_font_size.png',
+            'https://res.cloudinary.com/goodreds/image/upload/v1644556290/goodreds.net/buttons_carousel/3d_shadows.png',
+            'https://res.cloudinary.com/goodreds/image/upload/v1644556290/goodreds.net/buttons_carousel/3d_order_cta.png',
+            'https://res.cloudinary.com/goodreds/image/upload/v1644556290/goodreds.net/buttons_carousel/3d_corner_radius.png',
+            'https://res.cloudinary.com/goodreds/image/upload/v1644556290/goodreds.net/buttons_carousel/3d_states.png',
+            'https://res.cloudinary.com/goodreds/image/upload/v1644556290/goodreds.net/buttons_carousel/3d_order.png'
+            ]}">
+            <!-- Slides -->
+            <template x-for="(slide, index) in slides" :key="index">
+              <div x-show="activeSlide === slide" class="font-bold text-5xl h-auto flex items-center bg-sky-500 text-white rounded-lg">
+                <img class="max-w-full" x-bind:src="slide" alt=""/>
+                <!-- <span class="w-12 text-center" x-text="slide"></span>
+                <span class="text-sky-300">/</span>
+                <span class="w-12 text-center" x-text="slides.length"></span> -->
+              </div>
+            </template>
+
+            <!-- Prev/Next Arrows -->
+            <div class="absolute inset-0 flex">
+            <div class="flex items-center justify-start w-1/2">
+                <button
+                class="bg-sky-100 text-sky-500 hover:text-orange-500 font-bold hover:shadow-lg rounded-full w-12 h-12 -ml-6"
+                x-on:click="activeSlide = activeSlide === 1 ? slides.length : activeSlide - 1">
+                &#8592;
+                </button>
+            </div>
+            <div class="flex items-center justify-end w-1/2">
+                <button
+                class="bg-sky-100 text-sky-500 hover:text-orange-500 font-bold hover:shadow rounded-full w-12 h-12 -mr-6"
+                x-on:click="activeSlide = activeSlide === slides.length ? 1 : activeSlide + 1">
+                &#8594;
+                </button>
+            </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="absolute w-full flex items-center justify-center px-4">
+              <template x-for="(slide, index) in slides" :key="index">
+                  <button
+                  class="flex-1 w-4 h-2 mt-4 mx-2 mb-0 rounded-full overflow-hidden transition-colors duration-200 ease-out hover:bg-sky-600 hover:shadow-lg"
+                  :class="{
+                      'bg-orange-600': activeSlide === slide,
+                      'bg-sky-300': activeSlide !== slide
+                  }"
+                  x-on:click="activeSlide = slide"
+                  ></button>
+              </template>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+        <!-- TODO Title and intro text are a bit weak and maybe need to adhere to the 2/3 width used in the main elevatorPitch part above on the home page -->
       {% for item in data.services %} {% if item.name === 'Services' %}
       <div class="sm:col-span-2 md:col-span-3 md:mb-5 sm:w-4/6">
-        <h2
-          class="text-gray-800 mb-10 text-5xl tracking-tighter font-bold dark:text-gray-200"
-        >
+        <h2 class="text-gray-800 mb-10 text-5xl tracking-tighter font-bold dark:text-gray-200">
           {{ item.name }}
         </h2>
         <p class="text-xl tracking-tight text-gray-700 dark:text-gray-300">
@@ -23,15 +165,13 @@
         </p>
       </div>
       {% else %}
+      <!-- Main card design for each of the three tiers -->
+      <!-- TODO This should have some stylistic links to the pricing tiers displayed below - think matching hues for each of the three tiers:  -->
       <div>
-        <h3
-          class="text-gray-800 font-bold mb-8 text-3xl tracking-tight dark:text-white"
-        >
+        <h3 class="text-gray-800 font-bold mb-8 text-3xl tracking-tight dark:text-white">
           {{ item.name }}
         </h3>
-        <p
-          class="md:pb-5 post text-xl tracking-tight text-gray-700 dark:text-gray-300"
-        >
+        <p class="md:pb-5 post text-xl tracking-tight text-gray-700 dark:text-gray-300">
           {{ item.description | safe }}
         </p>
         <ul class="leading-8">

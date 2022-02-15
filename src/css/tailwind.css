@@ -8,7 +8,7 @@
     @apply border-t mt-4 mb-16 pt-4 tracking-widest text-stone-500 font-caption uppercase text-center;
   }
   .buttonDefaults {
-    @apply border-0 px-8 py-2 rounded-lg text-lg tracking-wide shadow-md;
+    @apply border-0 px-8 py-4 rounded-lg text-xl tracking-wide shadow-md;
   }
   .buttonCTA {
     @apply  bg-gradient-to-r
